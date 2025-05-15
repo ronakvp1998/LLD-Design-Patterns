@@ -2,13 +2,9 @@ package com.LLD.DesignPattern.CreationPattern.BuilderPattern;
 
 import java.util.List;
 
-//this can be an abstract class or an interface
 public abstract class StudentBuilder {
 
-    // mandatory field
     int rollNumber;
-
-    // optional fields
     int age;
     String name;
     String fatherName;
@@ -40,13 +36,12 @@ public abstract class StudentBuilder {
         return this;
     }
 
-    public StudentBuilder setSubjects(List<String> subjects) {
-        this.subjects = subjects;
-        return this;
-    }
+    abstract public StudentBuilder setSubjects();
 
-    public Student build(){
+    public Student build() {
         return new Student(this);
     }
 
 }
+
+

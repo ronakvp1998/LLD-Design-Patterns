@@ -2,7 +2,7 @@ package com.LLD.LLDProblems.DesignHashMapImpl;
 
 public class MyHashMap<K,V> {
 
-    private static final int INITIAL_SIZE = 1 << 4;
+    private static final int INITIAL_SIZE = 1 << 4; // 16
     private static final int MAXIMUM_CAPACITY = 1 << 30;
     public Entry[] hashTable;
 
