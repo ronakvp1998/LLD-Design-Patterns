@@ -1,0 +1,40 @@
+                        Application
+Windows                                      Mac
+-> Windows Button      -> Button            -> Mac Button
+-> Windows List        -> List              -> Mac List
+-> Windows Text        -> Text              -> Mac Text
+-> Windows list        -> dropdown list     -> Mac list
+
+create the application and this application can
+also be a Windows application and it can also be the Mac application and the
+application might contain the UI logic that it will contain some buttons some list some text
+some drop down list these are the different UI components that this application will be having but when I
+want to create the Windows application I want to use Windows button and I want to use Windows list I want to use Windows
+text similarly Windows drop down because that should be the proprietary for the windows one but when I'm creating the
+application for my Mac I want to use the Mac button I want to use the Mac list
+Mac text and Mac drop down list which is proprietary to the Mac application as
+you already know that both these operating systems are different and based on that operating system there will be different UI components so
+similarly when I'm creating the application I want to do the same thing like whenever I'm going with the windows all those components should be loaded
+and should be added as per the Windows application as per the Windows operating system and whenever I am going with the
+Mac all the components should be with the Mac operating system okay so here I can say this is one of
+the factories that it will create the Windows application for me and there is one more factor that is the Mac UI
+application Factory which will create the Mac UI application for me and this application is the another Factory that is the
+abstract Factory on top of the Mac Factory and the windows Factory which will create the applications okay so
+whenever I want to create the application I can just tell that okay I want to create the application which application I want to create the Mac
+application okay so I'll just pass that I want to create Mac application it will again in terms go to this Mac
+application it will create the classes for it and it will also create these similar
+classes for this UI components as well okay so this Mac will not go to create
+the components based on the Windows it will only create based on the Mac
+similarly when I'm going ahead and telling this application that I want to create the Windows application it will
+in terms again create the Windows application and it will load this components only it won't load this
+components okay so you can see that I have the abstract factor that is the application and within that application
+I can Define okay I want Mac or Windows and accordingly all those components would be loaded by default we do not
+have to tell anything okay when I'm going with the windows load this load this and similarly okay everything will
+be loaded by default as per the factories that we have designed so let's see this by example how we can implement
+
+Application
+-> Button and checkbox interface
+
+UIFactory -> createButton and createCheckBox
+-> WinUIFactory
+-> MacUIFactory

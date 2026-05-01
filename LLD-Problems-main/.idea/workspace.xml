@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a122bb9-c0b6-4cac-a10b-0d0276b0ed62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/LLD - Design Patterns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Pattern Naresh IT/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Pattern Naresh IT/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Pattern Naresh IT/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/src/main/java/com/dailycodebuffer/chainofresponsibility/BankPaymentHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/src/main/java/com/dailycodebuffer/chainofresponsibility/ChainOfResponsibilityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/src/main/java/com/dailycodebuffer/chainofresponsibility/CreditCardPaymentHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/src/main/java/com/dailycodebuffer/chainofresponsibility/PayPalPaymentHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/src/main/java/com/dailycodebuffer/chainofresponsibility/PaymentHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/ChainOfResponsibility/ChainOfResponsibility/src/test/java/com/dailycodebuffer/chainofresponsibility/ChainOfResponsibilityApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/CheckBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/os/mac/MacButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/os/mac/MacCheckBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/os/win/WinButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/os/win/WinCheckBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/uifactory/MacUIFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/uifactory/UIFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/abstract_factory/src/main/java/demo/component/uifactory/WinUIFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/src/main/java/FoodItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/src/main/java/GroceryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/src/main/java/GroceryItemAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/src/main/java/GroceryProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/src/main/java/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/adapter/src/main/java/SwiggyStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/src/main/java/HDProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/src/main/java/NetflixVideo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/src/main/java/UHD4KProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/src/main/java/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/src/main/java/VideoProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/bridge/src/main/java/YoutubeVideo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/src/main/java/Burger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/src/main/java/Meal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/src/main/java/MealBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/src/main/java/MealDirector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/src/main/java/NonVegMealBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/builder/src/main/java/VegMealBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/src/main/java/com/dailycodebuffer/command/CommandApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/src/main/java/com/dailycodebuffer/command/OpenTextFileOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/src/main/java/com/dailycodebuffer/command/SaveTextFileOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/src/main/java/com/dailycodebuffer/command/TextFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/src/main/java/com/dailycodebuffer/command/TextFileOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/src/main/java/com/dailycodebuffer/command/TextFileOperationExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/command/src/test/java/com/dailycodebuffer/command/CommandApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/src/main/java/com/dailycodebuffer/composite/CompositeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/src/main/java/com/dailycodebuffer/composite/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/src/main/java/com/dailycodebuffer/composite/FinancialDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/src/main/java/com/dailycodebuffer/composite/HeadDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/src/main/java/com/dailycodebuffer/composite/SalesDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/composite/src/test/java/com/dailycodebuffer/composite/CompositeApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/src/main/java/BasePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/src/main/java/CheeseBurstDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/src/main/java/JalepanoDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/src/main/java/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/decorator/src/main/java/PizzaDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/facade/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/facade/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/facade/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/facade/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/facade/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/facade/src/main/java/DeliveryBoy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/facade/src/main/java/DeliveryTeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/facade/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/facade/src/main/java/Restaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/facade/src/main/java/ZomatoFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/factory/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/factory/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/factory/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/factory/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/factory/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/factory/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/factory/src/main/java/OperatingSystemFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/factory/src/main/java/factories/LinuxOperatingSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/factory/src/main/java/factories/OperatingSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/factory/src/main/java/factories/WindowsOperatingSysten.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/src/main/java/com/dailycodebuffer/flyweight/DrawingClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/src/main/java/com/dailycodebuffer/flyweight/Line.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/src/main/java/com/dailycodebuffer/flyweight/Oval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/src/main/java/com/dailycodebuffer/flyweight/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/src/main/java/com/dailycodebuffer/flyweight/ShapeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/flyweight/src/test/java/com/dailycodebuffer/flyweight/FlyweightApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/src/main/java/com/dailycodebuffer/interpreter/AndExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/src/main/java/com/dailycodebuffer/interpreter/Expression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/src/main/java/com/dailycodebuffer/interpreter/InterpreterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/src/main/java/com/dailycodebuffer/interpreter/OrExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/src/main/java/com/dailycodebuffer/interpreter/TerminalExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/interpreter/src/test/java/com/dailycodebuffer/interpreter/InterpreterApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/src/main/java/com/dailycodebuffer/mediator/ChatMediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/src/main/java/com/dailycodebuffer/mediator/ChatMediatorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/src/main/java/com/dailycodebuffer/mediator/MediatorApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/src/main/java/com/dailycodebuffer/mediator/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/src/main/java/com/dailycodebuffer/mediator/UserImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/mediator/src/test/java/com/dailycodebuffer/mediator/MediatorApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/src/main/java/com/dailycodebuffer/memento/CareTaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/src/main/java/com/dailycodebuffer/memento/Memento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/src/main/java/com/dailycodebuffer/memento/MementoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/src/main/java/com/dailycodebuffer/memento/Originator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/memento/src/test/java/com/dailycodebuffer/memento/MementoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/src/main/java/com/dailycodebuffer/observer/Channel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/src/main/java/com/dailycodebuffer/observer/NewsAgency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/src/main/java/com/dailycodebuffer/observer/NewsChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/src/main/java/com/dailycodebuffer/observer/ObserverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/observer/src/test/java/com/dailycodebuffer/observer/ObserverApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/prototype/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/prototype/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/prototype/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/prototype/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/prototype/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/prototype/src/main/java/FourWheelerVehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/prototype/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/prototype/src/main/java/TwoWheelerVehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/prototype/src/main/java/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/prototype/src/main/java/VehicleRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/proxy/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/proxy/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/proxy/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/proxy/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/proxy/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/proxy/src/main/java/ATM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/proxy/src/main/java/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/proxy/src/main/java/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/proxy/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/src/main/java/EagerSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/src/main/java/EnumSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/src/main/java/LazySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/src/main/java/MultithreadSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/singleton/src/main/java/SerializableSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/dependencyinversion/bad/AddOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/dependencyinversion/bad/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/dependencyinversion/bad/SubOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/dependencyinversion/good/AddOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/dependencyinversion/good/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/dependencyinversion/good/CalculatorOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/dependencyinversion/good/SubOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/interfacesegregation/BadDAOInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/interfacesegregation/BadDBDaoConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/interfacesegregation/BadFileDaoConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/interfacesegregation/good/DAOInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/interfacesegregation/good/DBDaoConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/interfacesegregation/good/DBInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/interfacesegregation/good/FileDaoConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/interfacesegregation/good/FileInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/liskov/bad/CreditCardLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/liskov/bad/HomeLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/liskov/bad/LoanClosureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/liskov/bad/LoanPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/liskov/good/CreditCardLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/liskov/good/HomeLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/liskov/good/LoanClosureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/liskov/good/LoanPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/liskov/good/SecureLoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/openclosed/AddOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/openclosed/BadCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/openclosed/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/openclosed/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/openclosed/SubstractOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/singleresponsiblity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/singleresponsiblity/AccountOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/singleresponsiblity/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/solid_principles/src/main/java/com/solid/singleresponsiblity/TransactionOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/src/main/java/com/dailycodebuffer/state/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/src/main/java/com/dailycodebuffer/state/StartState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/src/main/java/com/dailycodebuffer/state/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/src/main/java/com/dailycodebuffer/state/StateApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/src/main/java/com/dailycodebuffer/state/StopState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/state/src/test/java/com/dailycodebuffer/state/StateApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/src/main/java/com/dailycodebuffer/strategy/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/src/main/java/com/dailycodebuffer/strategy/OperationAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/src/main/java/com/dailycodebuffer/strategy/OperationMultiply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/src/main/java/com/dailycodebuffer/strategy/OperationSubtract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/src/main/java/com/dailycodebuffer/strategy/Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/src/main/java/com/dailycodebuffer/strategy/StrategyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/strategy/src/test/java/com/dailycodebuffer/strategy/StrategyApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/src/main/java/com/dailycodebuffer/template/Cricket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/src/main/java/com/dailycodebuffer/template/Football.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/src/main/java/com/dailycodebuffer/template/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/src/main/java/com/dailycodebuffer/template/TemplateApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design_patterns-main/template/src/test/java/com/dailycodebuffer/template/TemplateApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Design Patterns/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Design Patterns/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Design Patterns/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/Design Patterns.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/AdapterPattern/Adaptee/WeightMachine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/AdapterPattern/Adaptee/WeigthMachineForBabies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/AdapterPattern/Adapter/WeightMachineAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/AdapterPattern/Adapter/WeightMachineAdapterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/AdapterPattern/Client/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/Directory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/Solution/Directory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/Solution/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/Solution/FileSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/Solution/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/ArithmeticExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/Expression$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/Expression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/Number.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/Operation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CreationPattern/BuilderPattern/ClientMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CreationPattern/BuilderPattern/Director.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CreationPattern/BuilderPattern/EngineeringStudentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CreationPattern/BuilderPattern/MBAStudentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CreationPattern/BuilderPattern/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/CreationPattern/BuilderPattern/StudentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/DecoratorPattern/Base/BasePizza.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/DecoratorPattern/Base/Farmhouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/DecoratorPattern/Base/Margherita.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/DecoratorPattern/Base/Vegdelight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/DecoratorPattern/Decorator/ExtraCheese.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/DecoratorPattern/Decorator/Mushroom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/DecoratorPattern/Decorator/ToppingDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/DecoratorPattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/FactoryPattern/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/FactoryPattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/FactoryPattern/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/FactoryPattern/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/FactoryPattern/ShapeFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/ObserverPattern/Observable/IphoneObservableImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/ObserverPattern/Observable/StocksObservable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/ObserverPattern/Observer/EmailAlertObserverImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/ObserverPattern/Observer/MobileAlertObserverImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/ObserverPattern/Observer/NotificationAlertObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/ObserverPattern/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/LiskovSubPrinciple/problem/Bicycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/LiskovSubPrinciple/problem/Bike.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/LiskovSubPrinciple/problem/MotorCycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/OpenClosedPrinciple/problem/InvoiceDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/OpenClosedPrinciple/solution/DatabaseInvoiceDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/OpenClosedPrinciple/solution/FilesystemInvoiceDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/OpenClosedPrinciple/solution/InvoiceDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/SingleResponsibilityPrinciple/Marker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/SingleResponsibilityPrinciple/problem/Invoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/SingleResponsibilityPrinciple/solution/InvoiceCalculateTotal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/SingleResponsibilityPrinciple/solution/InvoiceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/SolidPrinciple/SingleResponsibilityPrinciple/solution/InvoicePrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/GoodsVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/OffRoadVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/SportsVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Strategy/DriveStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Strategy/NormalDriveStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Strategy/SportsDriveStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Strategy/XYZDriveStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/GoodsVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/OffRoadVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/PassengerVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/SportsVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignBookMyShow/Booking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignBookMyShow/Enums/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignBookMyShow/Enums/SeatCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignBookMyShow/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignBookMyShow/MovieController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignBookMyShow/Payment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignBookMyShow/Screen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignBookMyShow/Seat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignBookMyShow/Show.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignBookMyShow/Theatre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignHashMapImpl/MyHashMap$Entry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignHashMapImpl/MyHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/MusicPlayerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/MusicPlayerFacade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/UML.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/UMLExplanation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/core/AudioEngine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/device/BluetoothSpeakerAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/device/HeadphonesAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/device/IAudioOutputDevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/device/WiredSpeakerAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/enums/DeviceType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/enums/PlayStrategyType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/external/BluetoothSpeakerAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/external/HeadphonesAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/external/WiredSpeakerAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/factories/DeviceFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/factories/DeviceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/folderStructure.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/managers/DeviceManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/managers/DeviceManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/managers/PlaylistManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/managers/StrategyManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/models/Playlist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/models/Song.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/strategies/CustomQueueStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/strategies/PlayStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/strategies/RandomPlayStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/strategies/SequentialPlayStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/UML.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/EmailStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/INotification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/INotificationDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/INotificationStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/IObservable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/IObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/NotificationEngine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/NotificationObservable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/NotificationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/NotificationSystemUpdated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/PopUpStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/SMSStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/SignatureDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/SimpleNotification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignNotificationSystem/updated/TimestampDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/EntranceGate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/ExitGate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/FourWheelerSpot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/FourWheelerSpotManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/NearToEntranceAndElevatorStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/NearToEntranceStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/ParkingSpot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/ParkingSpotManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/ParkingSpotManagerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/ParkingStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/Ticket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/TwoWheelerSpot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/TwoWheelerSpotManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignParkingLot/VehicleType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignTicTacToe/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignTicTacToe/Model/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignTicTacToe/Model/PieceType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignTicTacToe/Model/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignTicTacToe/Model/PlayingPiece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignTicTacToe/Model/PlayingPieceO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignTicTacToe/Model/PlayingPieceX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/DesignTicTacToe/TicTacToeGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/TomatoApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/UML.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/factories/NowOrderFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/factories/OrderFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/factories/ScheduledOrderFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/folderStructure.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/managers/OrderManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/managers/RestaurantManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/DeliveryOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/MenuItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/PickupOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/Restaurant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/services/NotificationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/strategies/CreditCardPaymentStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/strategies/PaymentStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/strategies/UpiPaymentStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/fooddeliveryapp/Tomato/utils/TimeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/DBStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/Document.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/DocumentEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/DocumentEditorClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/DocumentElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/FileStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/ImageElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/NewLineElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/Persistence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/TabSpaceElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/TextElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/LLD/LLDProblems/googledocs/simplesolution/Uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/Decoratorpattern/BasePizza.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/Decoratorpattern/FarmHouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/Decoratorpattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/Decoratorpattern/Margherita.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/Decoratorpattern/VegDelight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/Decoratorpattern/decorator/ExtraCheese.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/Decoratorpattern/decorator/Mushroon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/Decoratorpattern/decorator/ToppingDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/observerpattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/observerpattern/observable/IphoneObservableImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/observerpattern/observable/StockObservable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/observerpattern/observer/EmailObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/observerpattern/observer/NotifyAlertObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/wihtoutStrategy/GoodsVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/wihtoutStrategy/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/wihtoutStrategy/OffRoadVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/wihtoutStrategy/PassengerVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/wihtoutStrategy/SportVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/wihtoutStrategy/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/withStrategy/GoodVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/withStrategy/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/withStrategy/OffRoadVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/withStrategy/SportsVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/withStrategy/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/withStrategy/strategy/DriveStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/withStrategy/strategy/NormalDriveStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/out/production/Design Patterns/com/practice/strategy/withStrategy/strategy/SportsDriveStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/AdapterPattern/Adaptee/WeightMachine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/AdapterPattern/Adaptee/WeigthMachineForBabies.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/AdapterPattern/Adapter/WeightMachineAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/AdapterPattern/Adapter/WeightMachineAdapterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/AdapterPattern/Client/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/Directory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/File.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/Solution/Directory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/Solution/File.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/Solution/FileSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement1/Solution/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/ArithmeticExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/Expression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/Number.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CompositePattern/ProblemStatement2/solution/Operation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CreationPattern/BuilderPattern/ClientMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CreationPattern/BuilderPattern/Director.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CreationPattern/BuilderPattern/EngineeringStudentBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CreationPattern/BuilderPattern/MBAStudentBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CreationPattern/BuilderPattern/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/CreationPattern/BuilderPattern/StudentBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/DecoratorPattern/Base/BasePizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/DecoratorPattern/Base/Farmhouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/DecoratorPattern/Base/Margherita.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/DecoratorPattern/Base/Vegdelight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/DecoratorPattern/Decorator/ExtraCheese.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/DecoratorPattern/Decorator/Mushroom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/DecoratorPattern/Decorator/ToppingDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/DecoratorPattern/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/FactoryPattern/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/FactoryPattern/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/FactoryPattern/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/FactoryPattern/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/FactoryPattern/ShapeFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/ObserverPattern/Observable/IphoneObservableImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/ObserverPattern/Observable/StocksObservable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/ObserverPattern/Observer/EmailAlertObserverImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/ObserverPattern/Observer/MobileAlertObserverImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/ObserverPattern/Observer/NotificationAlertObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/ObserverPattern/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/LiskovSubPrinciple/problem/Bicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/LiskovSubPrinciple/problem/Bike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/LiskovSubPrinciple/problem/MotorCycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/OpenClosedPrinciple/problem/InvoiceDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/OpenClosedPrinciple/solution/DatabaseInvoiceDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/OpenClosedPrinciple/solution/FilesystemInvoiceDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/OpenClosedPrinciple/solution/InvoiceDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/SingleResponsibilityPrinciple/Marker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/SingleResponsibilityPrinciple/problem/Invoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/SingleResponsibilityPrinciple/solution/InvoiceCalculateTotal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/SingleResponsibilityPrinciple/solution/InvoiceDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/SolidPrinciple/SingleResponsibilityPrinciple/solution/InvoicePrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/GoodsVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/OffRoadVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/SportsVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Strategy/DriveStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Strategy/NormalDriveStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Strategy/SportsDriveStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Strategy/XYZDriveStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WitStrategyPattern/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/GoodsVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/OffRoadVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/PassengerVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/SportsVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/DesignPattern/StrategyPattern/WithoutStrategyPattern/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/BookMyShow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/Enums/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/Enums/SeatCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/Movie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/MovieController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/Payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/Screen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/Seat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/Show.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/Theatre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignBookMyShow/TheatreController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignHashMapImpl/MyHashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/MusicPlayerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/MusicPlayerFacade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/UML.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/UMLExplanation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/core/AudioEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/device/BluetoothSpeakerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/device/HeadphonesAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/device/IAudioOutputDevice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/device/WiredSpeakerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/enums/DeviceType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/enums/PlayStrategyType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/external/BluetoothSpeakerAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/external/HeadphonesAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/external/WiredSpeakerAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/factories/DeviceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/folderStructure.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/managers/DeviceManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/managers/PlaylistManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/managers/StrategyManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/models/Playlist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/models/Song.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/strategies/CustomQueueStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/strategies/PlayStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/strategies/RandomPlayStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignMusicPlayerApp/Spotify/strategies/SequentialPlayStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignNotificationSystem/NotificationSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignNotificationSystem/UML.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignNotificationSystem/updated/NotificationSystemUpdated.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/EntranceGate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/ExitGate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/FourWheelerSpot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/FourWheelerSpotManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/NearToEntranceAndElevatorStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/NearToEntranceStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/ParkingSpot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/ParkingSpotManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/ParkingSpotManagerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/ParkingStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/TwoWheelerSpot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/TwoWheelerSpotManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignParkingLot/VehicleType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignTicTacToe/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignTicTacToe/Model/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignTicTacToe/Model/PieceType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignTicTacToe/Model/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignTicTacToe/Model/PlayingPiece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignTicTacToe/Model/PlayingPieceO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignTicTacToe/Model/PlayingPieceX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/DesignTicTacToe/TicTacToeGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/TomatoApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/UML.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/factories/NowOrderFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/factories/OrderFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/factories/ScheduledOrderFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/folderStructure.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/managers/OrderManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/managers/RestaurantManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/DeliveryOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/MenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/PickupOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/models/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/services/NotificationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/strategies/CreditCardPaymentStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/strategies/PaymentStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/strategies/UpiPaymentStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/fooddeliveryapp/Tomato/utils/TimeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/googledocs/simplesolution/DocumentEditorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/LLD/LLDProblems/googledocs/simplesolution/Uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/Decoratorpattern/BasePizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/Decoratorpattern/FarmHouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/Decoratorpattern/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/Decoratorpattern/Margherita.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/Decoratorpattern/VegDelight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/Decoratorpattern/decorator/ExtraCheese.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/Decoratorpattern/decorator/Mushroon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/Decoratorpattern/decorator/ToppingDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/observerpattern/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/observerpattern/observable/IphoneObservableImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/observerpattern/observable/StockObservable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/observerpattern/observer/EmailObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/observerpattern/observer/NotifyAlertObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/wihtoutStrategy/GoodsVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/wihtoutStrategy/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/wihtoutStrategy/OffRoadVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/wihtoutStrategy/PassengerVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/wihtoutStrategy/SportVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/wihtoutStrategy/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/withStrategy/GoodVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/withStrategy/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/withStrategy/OffRoadVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/withStrategy/SportsVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/withStrategy/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/withStrategy/strategy/DriveStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/withStrategy/strategy/NormalDriveStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Design Patterns/src/com/practice/strategy/withStrategy/strategy/SportsDriveStrategy.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="3D6xZGBIjXax8AurJxRzyR0QBDa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/LLD - Design Patterns/Design Patterns And Problems Final"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a122bb9-c0b6-4cac-a10b-0d0276b0ed62" name="Changes" comment="" />
+      <created>1777616375038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777616375038</updated>
+    </task>
+    <servers />
+  </component>
+</project>

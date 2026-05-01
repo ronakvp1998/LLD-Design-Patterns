@@ -1,0 +1,26 @@
+Creating objects step by step
+
+House1
+-> walls
+-> windows
+-> rooms
+-> kitchen
+
+House2
+-> walls
+-> windows
+-> rooms
+-> kitchen
+-> swimming Pool
+
+House3
+-> walls
+-> windows
+-> rooms
+-> kitchen
+-> 2 Parking
+
+Normally
+we can create multiple constructor for the object creation for the above classes
+
+Builder Pattern

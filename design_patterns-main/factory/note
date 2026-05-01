@@ -1,0 +1,42 @@
+
+Tata Motors:
+-> Petrol
+-> EV
+
+for both we need different parts
+1. Ev
+-> Motor + Battery
+
+2. Petrol/ Disel
+-> Engine
+
+for both we need same parts
+-> seats
+-> wheels
+-> infotainment system
+
+so the deciding factory btw EV and Petrol is just the engine and motor rest all are same
+so based on some parameters we can decide what king of car we want
+
+******************************************************************************
+
+you're creating an application and that application can run on Windows as well right and on the Linux as well okay
+it can run on both the applications
+
+but we know that the file system in Windows and file system in Linux is completely different so whatever the
+commands that you want to execute those commands is also going to be different right how you handle the files in
+Windows and how you handle the files in Linux those are also going to be different
+
+now I need to make sure that whenever I am executing those commands
+I can execute the commands based on the operating system that has been defined okay
+
+so if I tell the system that okay I am going to run this commands but on the windows so if I pass windows okay
+I will get the windows object and all the commands which are there and those will be executed directly
+on the Windows itself because those commands will have the implementation for the windows same way with the Linux
+if I pass the Linux okay we will have the Linux object created and all the commands defined for that will be executed
+
+    windows -> windows commands for file system
+    Linux -> linux commands for file system
+
+so you can see that based on some parameters we are creating the objects of it okay
+and based on the objects everything should work accordingly

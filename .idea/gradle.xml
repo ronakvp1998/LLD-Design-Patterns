@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/ChainOfResponsibility/ChainOfResponsibility" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/ChainOfResponsibility/ChainOfResponsibility" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/abstract_factory" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/abstract_factory" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/adapter" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/adapter" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/bridge" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/bridge" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/builder" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/builder" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/command" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/command" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/composite" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/composite" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/decorator" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/decorator" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/facade" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/facade" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/factory" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/factory" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/flyweight" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/flyweight" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/interpreter" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/interpreter" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/mediator" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/mediator" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/memento" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/memento" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/observer" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/observer" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/prototype" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/prototype" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/proxy" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/proxy" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/singleton" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/singleton" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/solid_principles" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/solid_principles" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/state" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/state" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/strategy" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/strategy" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/design_patterns-main/template" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/design_patterns-main/template" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
