@@ -1,4 +1,7 @@
-package com.conceptcoding.structuralpatterns.decorator;
+package com.conceptcoding.structuralpatterns.decorator.topping;
+
+import com.conceptcoding.structuralpatterns.decorator.BasePizza;
+import com.conceptcoding.structuralpatterns.decorator.ToppingDecorator;
 
 // Step 4: Define the Concrete Decorators
 public class ExtraCheeseTopping extends ToppingDecorator {

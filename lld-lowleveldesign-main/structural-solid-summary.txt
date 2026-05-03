@@ -1,0 +1,581 @@
+﻿
+> class-summary.txt:1648:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\adapter\ImperialWeighingMachine.java
+  class-summary.txt:1649:TYPE: interface ImperialWeighingMachine
+  class-summary.txt:1650:METHOD: double getWeightInPounds();
+  class-summary.txt:1651:
+> class-summary.txt:1652:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\adapter\ImperialWeighingMachineImpl.java
+  class-summary.txt:1653:TYPE: class ImperialWeighingMachineImpl
+  class-summary.txt:1654:
+> class-summary.txt:1655:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\adapter\MetricWeighingMachine.java
+  class-summary.txt:1656:TYPE: class MetricWeighingMachine
+  class-summary.txt:1657:
+> class-summary.txt:1658:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\adapter\WeighingMachineAdapter.java
+  class-summary.txt:1659:TYPE: interface WeighingMachineAdapter
+  class-summary.txt:1660:
+> class-summary.txt:1661:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\adapter\WeightMachineAdapterImpl.java
+  class-summary.txt:1662:TYPE: class WeightMachineAdapterImpl
+  class-summary.txt:1663:FIELD: ImperialWeighingMachine 
+imperialWeighingMachine;
+  class-summary.txt:1664:
+> class-summary.txt:1665:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\Demo.java
+  class-summary.txt:1666:TYPE: class Demo
+  class-summary.txt:1667:
+> class-summary.txt:1668:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\Dog.java
+  class-summary.txt:1669:TYPE: class Dog
+  class-summary.txt:1670:
+> class-summary.txt:1671:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\Fish.java
+  class-summary.txt:1672:TYPE: class Fish
+  class-summary.txt:1673:
+> class-summary.txt:1674:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\bridge\problem\LivingThings.java
+  class-summary.txt:1675:TYPE: class LivingThings
+  class-summary.txt:1676:METHOD: abstract public void breathe();
+  class-summary.txt:1677:
+> class-summary.txt:1678:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\Tree.java
+  class-summary.txt:1679:TYPE: class Tree
+  class-summary.txt:1680:
+> class-summary.txt:1681:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\Whale.java
+  class-summary.txt:1682:TYPE: class Whale
+  class-summary.txt:1683:
+> class-summary.txt:1684:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\bridge\solution\BreathingProcess.java
+  class-summary.txt:1685:TYPE: interface BreathingProcess
+  class-summary.txt:1686:METHOD: void breathe();
+  class-summary.txt:1687:
+> class-summary.txt:1688:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\Client.java
+  class-summary.txt:1689:TYPE: class Client
+  class-summary.txt:1690:
+> class-summary.txt:1691:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\Dog.java
+  class-summary.txt:1692:TYPE: class Dog
+  class-summary.txt:1693:
+> class-summary.txt:1694:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\Fish.java
+  class-summary.txt:1695:TYPE: class Fish
+  class-summary.txt:1696:
+> class-summary.txt:1697:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\bridge\solution\GillBreathing.java
+  class-summary.txt:1698:TYPE: class GillBreathing
+  class-summary.txt:1699:
+> class-summary.txt:1700:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\bridge\solution\LivingThings.java
+  class-summary.txt:1701:TYPE: class LivingThings
+  class-summary.txt:1702:FIELD: protected BreathingProcess breathingProcess;
+  class-summary.txt:1703:METHOD: abstract public void breathe();
+  class-summary.txt:1704:
+> class-summary.txt:1705:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\bridge\solution\LungBreathing.java
+  class-summary.txt:1706:TYPE: class LungBreathing
+  class-summary.txt:1707:
+> class-summary.txt:1708:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\bridge\solution\Photosynthesis.java
+  class-summary.txt:1709:TYPE: class Photosynthesis
+  class-summary.txt:1710:
+> class-summary.txt:1711:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\Tree.java
+  class-summary.txt:1712:TYPE: class Tree
+  class-summary.txt:1713:
+> class-summary.txt:1714:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\filestructure\problem\Client.java
+  class-summary.txt:1715:TYPE: class Client
+  class-summary.txt:1716:
+> class-summary.txt:1717:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\filestructure\problem\Directory.java
+  class-summary.txt:1718:TYPE: class Directory
+  class-summary.txt:1719:FIELD: String directoryName;
+  class-summary.txt:1720:FIELD: List<Object> objectList;
+  class-summary.txt:1721:
+> class-summary.txt:1722:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\filestructure\problem\File.java
+  class-summary.txt:1723:TYPE: class File
+  class-summary.txt:1724:FIELD: String fileName;
+  class-summary.txt:1725:
+> class-summary.txt:1726:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\filestructure\solution\Directory.java
+  class-summary.txt:1727:TYPE: class Directory
+  class-summary.txt:1728:FIELD: String directoryName;
+  class-summary.txt:1729:FIELD: List<FileSystemComponent> children;
+  class-summary.txt:1730:
+> class-summary.txt:1731:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\filestructure\solution\File.java
+  class-summary.txt:1732:TYPE: class File
+  class-summary.txt:1733:FIELD: String fileName;
+  class-summary.txt:1734:
+> class-summary.txt:1735:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\filestructure\solution\FileSystemComponent.java
+  class-summary.txt:1736:TYPE: interface FileSystemComponent
+  class-summary.txt:1737:METHOD: void printContents();
+  class-summary.txt:1738:
+> class-summary.txt:1739:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\filestructure\solution\FileSystemDemo.java
+  class-summary.txt:1740:TYPE: class FileSystemDemo
+  class-summary.txt:1741:
+> class-summary.txt:1742:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\mathexpression\ArithmeticExpression.java
+  class-summary.txt:1743:TYPE: interface ArithmeticExpression
+  class-summary.txt:1744:METHOD: int evaluate();
+  class-summary.txt:1745:
+> class-summary.txt:1746:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\mathexpression\Expression.java
+  class-summary.txt:1747:TYPE: class Expression
+  class-summary.txt:1748:FIELD: ArithmeticExpression leftExpression;
+  class-summary.txt:1749:FIELD: ArithmeticExpression rightExpression;
+  class-summary.txt:1750:FIELD: OperationType operation;
+> class-summary.txt:1752:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\mathexpression\MathExpressionEvaluator.java
+  class-summary.txt:1753:TYPE: class MathExpressionEvaluator
+  class-summary.txt:1754:
+> class-summary.txt:1755:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\mathexpression\Number.java
+  class-summary.txt:1756:TYPE: class Number
+  class-summary.txt:1757:FIELD: int value;
+  class-summary.txt:1758:
+> class-summary.txt:1759:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\composite\mathexpression\OperationType.java
+  class-summary.txt:1760:TYPE: enum OperationType
+  class-summary.txt:1761:
+> class-summary.txt:1762:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\decorator\BasePizza.java
+  class-summary.txt:1763:TYPE: interface BasePizza
+  class-summary.txt:1764:METHOD: String getDescription();
+  class-summary.txt:1765:METHOD: double getCost();
+  class-summary.txt:1766:
+> class-summary.txt:1767:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\decorator\basepizzas\ChickenDominator.java
+  class-summary.txt:1768:TYPE: class ChickenDominator
+  class-summary.txt:1769:
+> class-summary.txt:1770:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\decorator\basepizzas\Farmhouse.java
+  class-summary.txt:1771:TYPE: class Farmhouse
+  class-summary.txt:1772:
+> class-summary.txt:1773:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\decorator\basepizzas\PlainPizza.java
+  class-summary.txt:1774:TYPE: class PlainPizza
+  class-summary.txt:1775:
+> class-summary.txt:1776:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\decorator\basepizzas\TandooriPaneerDelight.java
+  class-summary.txt:1777:TYPE: class TandooriPaneerDelight
+  class-summary.txt:1778:
+> class-summary.txt:1779:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\decorator\PizzaShop.java
+  class-summary.txt:1780:TYPE: class PizzaShop
+  class-summary.txt:1781:
+> class-summary.txt:1782:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\decorator\ToppingDecorator.java
+  class-summary.txt:1783:TYPE: class ToppingDecorator
+  class-summary.txt:1784:FIELD: public BasePizza pizza;
+  class-summary.txt:1785:
+> class-summary.txt:1786:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\decorator\toppings\ExtraCheeseTopping.java
+  class-summary.txt:1787:TYPE: class ExtraCheeseTopping
+  class-summary.txt:1788:
+> class-summary.txt:1789:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\decorator\toppings\MushroomTopping.java
+  class-summary.txt:1790:TYPE: class MushroomTopping
+  class-summary.txt:1791:
+> class-summary.txt:1792:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\decorator\toppings\PepperoniTopping.java
+  class-summary.txt:1793:TYPE: class PepperoniTopping
+  class-summary.txt:1794:
+> class-summary.txt:1795:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\decorator\toppings\VeggiesTopping.java
+  class-summary.txt:1796:TYPE: class VeggiesTopping
+  class-summary.txt:1797:
+> class-summary.txt:1798:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\facade\ECommerceApp.java
+  class-summary.txt:1799:TYPE: class ECommerceApp
+  class-summary.txt:1800:
+> class-summary.txt:1801:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\facade\InventoryService.java
+  class-summary.txt:1802:TYPE: class InventoryService
+  class-summary.txt:1803:
+> class-summary.txt:1804:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\facade\NotificationService.java
+  class-summary.txt:1805:TYPE: class NotificationService
+  class-summary.txt:1806:
+> class-summary.txt:1807:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\facade\OrderFacade.java
+  class-summary.txt:1808:TYPE: class OrderFacade
+  class-summary.txt:1809:FIELD: private final InventoryService inventory;
+  class-summary.txt:1810:FIELD: private final PaymentService payment;
+  class-summary.txt:1811:FIELD: private final ShippingService shipping;
+> class-summary.txt:1814:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\facade\PaymentService.java
+  class-summary.txt:1815:TYPE: class PaymentService
+  class-summary.txt:1816:
+> class-summary.txt:1817:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\facade\ShippingService.java
+  class-summary.txt:1818:TYPE: class ShippingService
+  class-summary.txt:1819:
+> class-summary.txt:1820:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\roboticgame\issue\Demo.java
+  class-summary.txt:1821:TYPE: class Demo
+  class-summary.txt:1822:
+> class-summary.txt:1823:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\roboticgame\issue\Robot.java
+  class-summary.txt:1824:TYPE: class Robot
+  class-summary.txt:1825:FIELD: int coordinateX;
+  class-summary.txt:1826:FIELD: int coordinateY;
+  class-summary.txt:1827:FIELD: String type;
+> class-summary.txt:1829:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\roboticgame\issue\Sprites.java
+  class-summary.txt:1830:TYPE: class Sprites
+  class-summary.txt:1831:
+> class-summary.txt:1832:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\roboticgame\solution\HumanoidRobot.java
+  class-summary.txt:1833:TYPE: class HumanoidRobot
+  class-summary.txt:1834:
+> class-summary.txt:1835:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\roboticgame\solution\IRobot.java
+  class-summary.txt:1836:TYPE: interface IRobot
+  class-summary.txt:1837:METHOD: void display(int x, int y);
+  class-summary.txt:1838:
+> class-summary.txt:1839:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\roboticgame\solution\RoboticDog.java
+  class-summary.txt:1840:TYPE: class RoboticDog
+  class-summary.txt:1841:
+> class-summary.txt:1842:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\roboticgame\solution\RoboticFactory.java
+  class-summary.txt:1843:TYPE: class RoboticFactory
+  class-summary.txt:1844:
+> class-summary.txt:1845:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\roboticgame\solution\RoboticGameSimulation.java
+  class-summary.txt:1846:TYPE: class RoboticGameSimulation
+  class-summary.txt:1847:
+> class-summary.txt:1848:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\roboticgame\solution\Sprites.java
+  class-summary.txt:1849:TYPE: class Sprites
+  class-summary.txt:1850:
+> class-summary.txt:1851:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\wordprocessor\issue\Character.java
+  class-summary.txt:1852:TYPE: class Character
+  class-summary.txt:1853:FIELD: char character;
+  class-summary.txt:1854:FIELD: String fontType;
+  class-summary.txt:1855:FIELD: int size;
+> class-summary.txt:1859:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\wordprocessor\issue\Demo.java
+  class-summary.txt:1860:TYPE: class Demo
+  class-summary.txt:1861:
+> class-summary.txt:1862:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\wordprocessor\solution\DocumentCharacter.java
+  class-summary.txt:1863:TYPE: class DocumentCharacter
+  class-summary.txt:1864:FIELD: private final char character;
+  class-summary.txt:1865:FIELD: private final String fontType;
+  class-summary.txt:1866:FIELD: private final int size;
+> class-summary.txt:1868:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\wordprocessor\solution\ILetter.java
+  class-summary.txt:1869:TYPE: interface ILetter
+  class-summary.txt:1870:METHOD: void display(int row, int column);
+  class-summary.txt:1871:
+> class-summary.txt:1872:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\wordprocessor\solution\LetterFactory.java
+  class-summary.txt:1873:TYPE: class LetterFactory
+  class-summary.txt:1874:
+> class-summary.txt:1875:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\flyweight\wordprocessor\solution\WordProcessorSimulation.java
+  class-summary.txt:1876:TYPE: class WordProcessorSimulation
+  class-summary.txt:1877:
+> class-summary.txt:1878:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\proxy\EmployeeDao.java
+  class-summary.txt:1879:TYPE: interface EmployeeDao
+  class-summary.txt:1880:METHOD: void getEmployeeInfo(int empID);
+  class-summary.txt:1881:METHOD: void createEmployee(EmployeeDo obj);
+  class-summary.txt:1882:
+> class-summary.txt:1883:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\proxy\EmployeeDaoImpl.java
+  class-summary.txt:1884:TYPE: class EmployeeDaoImpl
+  class-summary.txt:1885:
+> class-summary.txt:1886:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\proxy\EmployeeDaoProxy.java
+  class-summary.txt:1887:TYPE: class EmployeeDaoProxy
+  class-summary.txt:1888:FIELD: private EmployeeDao empDaoObj;
+  class-summary.txt:1889:FIELD: private String clientRole;
+  class-summary.txt:1890:
+> class-summary.txt:1891:FILE: 
+src\main\java\com\conceptcoding\structuralpatterns\proxy\EmployeeDo.java
+  class-summary.txt:1892:TYPE: class EmployeeDo
+  class-summary.txt:1893:
+> class-summary.txt:1894:FILE: src\main\java\com\conceptcoding\structuralpatter
+ns\proxy\EmployeeManagement.java
+  class-summary.txt:1895:TYPE: class EmployeeManagement
+  class-summary.txt:1896:
+> class-summary.txt:1897:FILE: src\main\java\com\conceptcoding\video1solid\depe
+ndencyinversion\solution\DemoSolution.java
+  class-summary.txt:1898:TYPE: class DemoSolution
+  class-summary.txt:1899:
+> class-summary.txt:1900:FILE: src\main\java\com\conceptcoding\video1solid\depe
+ndencyinversion\solution\MacBook.java
+  class-summary.txt:1901:TYPE: class MacBook
+  class-summary.txt:1902:FIELD: private final Keyboard keyboard;
+  class-summary.txt:1903:FIELD: private final Mouse mouse;
+  class-summary.txt:1904:
+> class-summary.txt:1905:FILE: src\main\java\com\conceptcoding\video1solid\depe
+ndencyinversion\utility\BluetoothKeyboard.java
+  class-summary.txt:1906:TYPE: class BluetoothKeyboard
+  class-summary.txt:1907:FIELD: private final String connectionType;
+  class-summary.txt:1908:FIELD: private final String company;
+  class-summary.txt:1909:FIELD: private final String modelVersion;
+> class-summary.txt:1912:FILE: src\main\java\com\conceptcoding\video1solid\depe
+ndencyinversion\utility\BluetoothMouse.java
+  class-summary.txt:1913:TYPE: class BluetoothMouse
+  class-summary.txt:1914:FIELD: private final String connectionType;
+  class-summary.txt:1915:FIELD: private final String company;
+  class-summary.txt:1916:FIELD: private final String modelVersion;
+> class-summary.txt:1919:FILE: src\main\java\com\conceptcoding\video1solid\depe
+ndencyinversion\utility\Keyboard.java
+  class-summary.txt:1920:TYPE: interface Keyboard
+  class-summary.txt:1921:METHOD: void getSpecifications();
+  class-summary.txt:1922:
+> class-summary.txt:1923:FILE: src\main\java\com\conceptcoding\video1solid\depe
+ndencyinversion\utility\Mouse.java
+  class-summary.txt:1924:TYPE: interface Mouse
+  class-summary.txt:1925:METHOD: void getSpecifications();
+  class-summary.txt:1926:
+> class-summary.txt:1927:FILE: src\main\java\com\conceptcoding\video1solid\depe
+ndencyinversion\utility\WiredKeyboard.java
+  class-summary.txt:1928:TYPE: class WiredKeyboard
+  class-summary.txt:1929:FIELD: private final String connectionType;
+  class-summary.txt:1930:FIELD: private final String company;
+  class-summary.txt:1931:FIELD: private final String modelVersion;
+> class-summary.txt:1934:FILE: src\main\java\com\conceptcoding\video1solid\depe
+ndencyinversion\utility\WiredMouse.java
+  class-summary.txt:1935:TYPE: class WiredMouse
+  class-summary.txt:1936:FIELD: private final String connectionType;
+  class-summary.txt:1937:FIELD: private final String company;
+  class-summary.txt:1938:FIELD: private final String modelVersion;
+> class-summary.txt:1941:FILE: src\main\java\com\conceptcoding\video1solid\depe
+ndencyinversion\violation\DemoViolation.java
+  class-summary.txt:1942:TYPE: class DemoViolation
+  class-summary.txt:1943:
+> class-summary.txt:1944:FILE: src\main\java\com\conceptcoding\video1solid\depe
+ndencyinversion\violation\MacBook.java
+  class-summary.txt:1945:TYPE: class MacBook
+  class-summary.txt:1946:FIELD: private final WiredKeyboard keyboard;
+  class-summary.txt:1947:FIELD: private final WiredMouse mouse;
+  class-summary.txt:1948:
+> class-summary.txt:1949:FILE: src\main\java\com\conceptcoding\video1solid\inte
+rfacesegregation\solution\Chef.java
+  class-summary.txt:1950:TYPE: class Chef
+  class-summary.txt:1951:
+> class-summary.txt:1952:FILE: src\main\java\com\conceptcoding\video1solid\inte
+rfacesegregation\solution\ChefTasks.java
+  class-summary.txt:1953:TYPE: interface ChefTasks
+  class-summary.txt:1954:METHOD: void prepareFood();
+  class-summary.txt:1955:METHOD: void decideMenu();
+  class-summary.txt:1956:
+> class-summary.txt:1957:FILE: src\main\java\com\conceptcoding\video1solid\inte
+rfacesegregation\solution\MaintenanceTasks.java
+  class-summary.txt:1958:TYPE: interface MaintenanceTasks
+  class-summary.txt:1959:METHOD: void cleanTheKitchen();
+  class-summary.txt:1960:METHOD: void reStockGroceries();
+  class-summary.txt:1961:
+> class-summary.txt:1962:FILE: src\main\java\com\conceptcoding\video1solid\inte
+rfacesegregation\solution\SolutionDemo.java
+  class-summary.txt:1963:TYPE: class SolutionDemo
+  class-summary.txt:1964:
+> class-summary.txt:1965:FILE: src\main\java\com\conceptcoding\video1solid\inte
+rfacesegregation\solution\Waiter.java
+  class-summary.txt:1966:TYPE: class Waiter
+  class-summary.txt:1967:
+> class-summary.txt:1968:FILE: src\main\java\com\conceptcoding\video1solid\inte
+rfacesegregation\solution\WaiterTasks.java
+  class-summary.txt:1969:TYPE: interface WaiterTasks
+  class-summary.txt:1970:METHOD: void serveFoodAndDrinks();
+  class-summary.txt:1971:METHOD: void takeOrder();
+  class-summary.txt:1972:
+> class-summary.txt:1973:FILE: src\main\java\com\conceptcoding\video1solid\inte
+rfacesegregation\violation\RestaurantEmployee.java
+  class-summary.txt:1974:TYPE: interface RestaurantEmployee
+  class-summary.txt:1975:METHOD: void prepareFood();
+  class-summary.txt:1976:METHOD: void decideMenu();
+  class-summary.txt:1977:METHOD: void serveFoodAndDrinks();
+> class-summary.txt:1981:FILE: src\main\java\com\conceptcoding\video1solid\inte
+rfacesegregation\violation\ViolationDemo.java
+  class-summary.txt:1982:TYPE: class ViolationDemo
+  class-summary.txt:1983:
+> class-summary.txt:1984:FILE: src\main\java\com\conceptcoding\video1solid\inte
+rfacesegregation\violation\Waiter.java
+  class-summary.txt:1985:TYPE: class Waiter
+  class-summary.txt:1986:
+> class-summary.txt:1987:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example1\solution\Bicycle.java
+  class-summary.txt:1988:TYPE: class Bicycle
+  class-summary.txt:1989:FIELD: String brand;
+  class-summary.txt:1990:FIELD: Boolean hasGears;
+  class-summary.txt:1991:FIELD: int speed;
+> class-summary.txt:1993:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example1\solution\Bike.java
+  class-summary.txt:1994:TYPE: class Bike
+  class-summary.txt:1995:METHOD: public abstract void accelerate();
+  class-summary.txt:1996:METHOD: public abstract void applyBrakes();
+  class-summary.txt:1997:
+> class-summary.txt:1998:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example1\solution\Demo.java
+  class-summary.txt:1999:TYPE: class Demo
+  class-summary.txt:2000:
+> class-summary.txt:2001:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example1\solution\Engine.java
+  class-summary.txt:2002:TYPE: interface Engine
+  class-summary.txt:2003:METHOD: void turnOnEngine();
+  class-summary.txt:2004:METHOD: void turnOffEngine();
+  class-summary.txt:2005:
+> class-summary.txt:2006:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example1\solution\MotorCycle.java
+  class-summary.txt:2007:TYPE: class MotorCycle
+  class-summary.txt:2008:FIELD: String company;
+  class-summary.txt:2009:FIELD: boolean isEngineOn;
+  class-summary.txt:2010:FIELD: int speed;
+> class-summary.txt:2012:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example1\violation\Bicycle.java
+  class-summary.txt:2013:TYPE: class Bicycle
+  class-summary.txt:2014:FIELD: String brand;
+  class-summary.txt:2015:FIELD: Boolean hasGears;
+  class-summary.txt:2016:FIELD: int speed;
+> class-summary.txt:2018:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example1\violation\Bike.java
+  class-summary.txt:2019:TYPE: interface Bike
+  class-summary.txt:2020:METHOD: void turnOnEngine();
+  class-summary.txt:2021:METHOD: void turnOffEngine();
+  class-summary.txt:2022:METHOD: void accelerate();
+> class-summary.txt:2025:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example1\violation\Demo.java
+  class-summary.txt:2026:TYPE: class Demo
+  class-summary.txt:2027:
+> class-summary.txt:2028:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example1\violation\MotorCycle.java
+  class-summary.txt:2029:TYPE: class MotorCycle
+  class-summary.txt:2030:FIELD: String company;
+  class-summary.txt:2031:FIELD: boolean isEngineOn;
+  class-summary.txt:2032:FIELD: int speed;
+> class-summary.txt:2034:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\solution\Bicycle.java
+  class-summary.txt:2035:TYPE: class Bicycle
+  class-summary.txt:2036:
+> class-summary.txt:2037:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\solution\Car.java
+  class-summary.txt:2038:TYPE: class Car
+  class-summary.txt:2039:
+> class-summary.txt:2040:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\solution\EngineVehicle.java
+  class-summary.txt:2041:TYPE: class EngineVehicle
+  class-summary.txt:2042:
+> class-summary.txt:2043:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\solution\MotorCycle.java
+  class-summary.txt:2044:TYPE: class MotorCycle
+  class-summary.txt:2045:
+> class-summary.txt:2046:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\solution\SolutionDemo.java
+  class-summary.txt:2047:TYPE: class SolutionDemo
+  class-summary.txt:2048:
+> class-summary.txt:2049:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\solution\Vehicle.java
+  class-summary.txt:2050:TYPE: class Vehicle
+  class-summary.txt:2051:
+> class-summary.txt:2052:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\violation\Bicycle.java
+  class-summary.txt:2053:TYPE: class Bicycle
+  class-summary.txt:2054:
+> class-summary.txt:2055:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\violation\Car.java
+  class-summary.txt:2056:TYPE: class Car
+  class-summary.txt:2057:
+> class-summary.txt:2058:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\violation\MotorCycle.java
+  class-summary.txt:2059:TYPE: class MotorCycle
+  class-summary.txt:2060:
+> class-summary.txt:2061:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\violation\Vehicle.java
+  class-summary.txt:2062:TYPE: class Vehicle
+  class-summary.txt:2063:
+> class-summary.txt:2064:FILE: src\main\java\com\conceptcoding\video1solid\lisk
+ovsubstitution\example2\violation\ViolationDemo.java
+  class-summary.txt:2065:TYPE: class ViolationDemo
+  class-summary.txt:2066:
+> class-summary.txt:2067:FILE: src\main\java\com\conceptcoding\video1solid\open
+closed\solution\DatabaseInvoiceDao.java
+  class-summary.txt:2068:TYPE: class DatabaseInvoiceDao
+  class-summary.txt:2069:FIELD: Invoice invoice;
+  class-summary.txt:2070:
+> class-summary.txt:2071:FILE: src\main\java\com\conceptcoding\video1solid\open
+closed\solution\FileInvoiceDao.java
+  class-summary.txt:2072:TYPE: class FileInvoiceDao
+  class-summary.txt:2073:FIELD: Invoice invoice;
+  class-summary.txt:2074:
+> class-summary.txt:2075:FILE: 
+src\main\java\com\conceptcoding\video1solid\openclosed\solution\InvoiceDao.java
+  class-summary.txt:2076:TYPE: interface InvoiceDao
+  class-summary.txt:2077:METHOD: void save();
+  class-summary.txt:2078:
+> class-summary.txt:2079:FILE: src\main\java\com\conceptcoding\video1solid\open
+closed\solution\SolutionDemo.java
+  class-summary.txt:2080:TYPE: class SolutionDemo
+  class-summary.txt:2081:
+> class-summary.txt:2082:FILE: src\main\java\com\conceptcoding\video1solid\open
+closed\violation\InvoiceDao.java
+  class-summary.txt:2083:TYPE: class InvoiceDao
+  class-summary.txt:2084:FIELD: Invoice invoice;
+  class-summary.txt:2085:
+> class-summary.txt:2086:FILE: src\main\java\com\conceptcoding\video1solid\open
+closed\violation\InvoiceDaoOld.java
+  class-summary.txt:2087:TYPE: class InvoiceDaoOld
+  class-summary.txt:2088:FIELD: Invoice invoice;
+  class-summary.txt:2089:
+> class-summary.txt:2090:FILE: src\main\java\com\conceptcoding\video1solid\open
+closed\violation\ViolationDemo.java
+  class-summary.txt:2091:TYPE: class ViolationDemo
+  class-summary.txt:2092:
+> class-summary.txt:2093:FILE: src\main\java\com\conceptcoding\video1solid\sing
+leresponsibility\solution\Invoice.java
+  class-summary.txt:2094:TYPE: class Invoice
+  class-summary.txt:2095:FIELD: private Marker marker;
+  class-summary.txt:2096:FIELD: private int quantity;
+  class-summary.txt:2097:FIELD: private int total;
+> class-summary.txt:2099:FILE: src\main\java\com\conceptcoding\video1solid\sing
+leresponsibility\solution\InvoiceDao.java
+  class-summary.txt:2100:TYPE: class InvoiceDao
+  class-summary.txt:2101:FIELD: Invoice invoice;
+  class-summary.txt:2102:
+> class-summary.txt:2103:FILE: src\main\java\com\conceptcoding\video1solid\sing
+leresponsibility\solution\InvoicePrinter.java
+  class-summary.txt:2104:TYPE: class InvoicePrinter
+  class-summary.txt:2105:FIELD: private Invoice invoice;
+  class-summary.txt:2106:
+> class-summary.txt:2107:FILE: src\main\java\com\conceptcoding\video1solid\sing
+leresponsibility\solution\Marker.java
+  class-summary.txt:2108:TYPE: class Marker
+  class-summary.txt:2109:FIELD: String name;
+  class-summary.txt:2110:FIELD: String color;
+  class-summary.txt:2111:FIELD: int price;
+> class-summary.txt:2114:FILE: src\main\java\com\conceptcoding\video1solid\sing
+leresponsibility\solution\SolutionDemo.java
+  class-summary.txt:2115:TYPE: class SolutionDemo
+  class-summary.txt:2116:
+> class-summary.txt:2117:FILE: src\main\java\com\conceptcoding\video1solid\sing
+leresponsibility\violation\Invoice.java
+  class-summary.txt:2118:TYPE: class Invoice
+  class-summary.txt:2119:FIELD: private Marker marker;
+  class-summary.txt:2120:FIELD: private int quantity;
+  class-summary.txt:2121:FIELD: private int total;
+> class-summary.txt:2123:FILE: src\main\java\com\conceptcoding\video1solid\sing
+leresponsibility\violation\Marker.java
+  class-summary.txt:2124:TYPE: class Marker
+  class-summary.txt:2125:FIELD: String name;
+  class-summary.txt:2126:FIELD: String color;
+  class-summary.txt:2127:FIELD: int price;
+> class-summary.txt:2130:FILE: src\main\java\com\conceptcoding\video1solid\sing
+leresponsibility\violation\ViolationDemo.java
+  class-summary.txt:2131:TYPE: class ViolationDemo
+  class-summary.txt:2132:
+
+

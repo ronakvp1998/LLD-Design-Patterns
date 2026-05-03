@@ -1,4 +1,6 @@
-package com.conceptcoding.structuralpatterns.decorator;
+package com.conceptcoding.structuralpatterns.decorator.basepizzas;
+
+import com.conceptcoding.structuralpatterns.decorator.BasePizza;
 
 // Step 2: Define the Concrete Component
 public class TandooriPaneerDelight implements BasePizza {

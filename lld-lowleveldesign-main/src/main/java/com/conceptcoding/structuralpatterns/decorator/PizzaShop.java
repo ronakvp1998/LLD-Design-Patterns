@@ -1,5 +1,14 @@
 package com.conceptcoding.structuralpatterns.decorator;
 
+import com.conceptcoding.structuralpatterns.decorator.basepizzas.ChickenDominator;
+import com.conceptcoding.structuralpatterns.decorator.basepizzas.Farmhouse;
+import com.conceptcoding.structuralpatterns.decorator.basepizzas.PlainPizza;
+import com.conceptcoding.structuralpatterns.decorator.basepizzas.TandooriPaneerDelight;
+import com.conceptcoding.structuralpatterns.decorator.topping.ExtraCheeseTopping;
+import com.conceptcoding.structuralpatterns.decorator.topping.MushroomTopping;
+import com.conceptcoding.structuralpatterns.decorator.topping.PepperoniTopping;
+import com.conceptcoding.structuralpatterns.decorator.topping.VeggiesTopping;
+
 // Step 5: Client Demonstration
 public class PizzaShop {
     public static void main(String[] args) {

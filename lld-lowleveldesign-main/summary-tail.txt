@@ -1,0 +1,200 @@
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\utility\WiredMouse.java
+TYPE: class WiredMouse
+FIELD: private final String connectionType;
+FIELD: private final String company;
+FIELD: private final String modelVersion;
+FIELD: private final String color;
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\violation\DemoViolation.java
+TYPE: class DemoViolation
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\violation\MacBook.java
+TYPE: class MacBook
+FIELD: private final WiredKeyboard keyboard;
+FIELD: private final WiredMouse mouse;
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\Chef.java
+TYPE: class Chef
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\ChefTasks.java
+TYPE: interface ChefTasks
+METHOD: void prepareFood();
+METHOD: void decideMenu();
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\MaintenanceTasks.java
+TYPE: interface MaintenanceTasks
+METHOD: void cleanTheKitchen();
+METHOD: void reStockGroceries();
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\SolutionDemo.java
+TYPE: class SolutionDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\Waiter.java
+TYPE: class Waiter
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\WaiterTasks.java
+TYPE: interface WaiterTasks
+METHOD: void serveFoodAndDrinks();
+METHOD: void takeOrder();
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\violation\RestaurantEmployee.java
+TYPE: interface RestaurantEmployee
+METHOD: void prepareFood();
+METHOD: void decideMenu();
+METHOD: void serveFoodAndDrinks();
+METHOD: void takeOrder();
+METHOD: void cleanTheKitchen();
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\violation\ViolationDemo.java
+TYPE: class ViolationDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\violation\Waiter.java
+TYPE: class Waiter
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\solution\Bicycle.java
+TYPE: class Bicycle
+FIELD: String brand;
+FIELD: Boolean hasGears;
+FIELD: int speed;
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\solution\Bike.java
+TYPE: class Bike
+METHOD: public abstract void accelerate();
+METHOD: public abstract void applyBrakes();
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\solution\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\solution\Engine.java
+TYPE: interface Engine
+METHOD: void turnOnEngine();
+METHOD: void turnOffEngine();
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\solution\MotorCycle.java
+TYPE: class MotorCycle
+FIELD: String company;
+FIELD: boolean isEngineOn;
+FIELD: int speed;
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\violation\Bicycle.java
+TYPE: class Bicycle
+FIELD: String brand;
+FIELD: Boolean hasGears;
+FIELD: int speed;
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\violation\Bike.java
+TYPE: interface Bike
+METHOD: void turnOnEngine();
+METHOD: void turnOffEngine();
+METHOD: void accelerate();
+METHOD: void applyBrakes();
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\violation\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\violation\MotorCycle.java
+TYPE: class MotorCycle
+FIELD: String company;
+FIELD: boolean isEngineOn;
+FIELD: int speed;
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\Bicycle.java
+TYPE: class Bicycle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\Car.java
+TYPE: class Car
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\EngineVehicle.java
+TYPE: class EngineVehicle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\MotorCycle.java
+TYPE: class MotorCycle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\SolutionDemo.java
+TYPE: class SolutionDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\Vehicle.java
+TYPE: class Vehicle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\violation\Bicycle.java
+TYPE: class Bicycle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\violation\Car.java
+TYPE: class Car
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\violation\MotorCycle.java
+TYPE: class MotorCycle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\violation\Vehicle.java
+TYPE: class Vehicle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\violation\ViolationDemo.java
+TYPE: class ViolationDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\solution\DatabaseInvoiceDao.java
+TYPE: class DatabaseInvoiceDao
+FIELD: Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\solution\FileInvoiceDao.java
+TYPE: class FileInvoiceDao
+FIELD: Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\solution\InvoiceDao.java
+TYPE: interface InvoiceDao
+METHOD: void save();
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\solution\SolutionDemo.java
+TYPE: class SolutionDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\violation\InvoiceDao.java
+TYPE: class InvoiceDao
+FIELD: Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\violation\InvoiceDaoOld.java
+TYPE: class InvoiceDaoOld
+FIELD: Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\violation\ViolationDemo.java
+TYPE: class ViolationDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\solution\Invoice.java
+TYPE: class Invoice
+FIELD: private Marker marker;
+FIELD: private int quantity;
+FIELD: private int total;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\solution\InvoiceDao.java
+TYPE: class InvoiceDao
+FIELD: Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\solution\InvoicePrinter.java
+TYPE: class InvoicePrinter
+FIELD: private Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\solution\Marker.java
+TYPE: class Marker
+FIELD: String name;
+FIELD: String color;
+FIELD: int price;
+FIELD: int year;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\solution\SolutionDemo.java
+TYPE: class SolutionDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\violation\Invoice.java
+TYPE: class Invoice
+FIELD: private Marker marker;
+FIELD: private int quantity;
+FIELD: private int total;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\violation\Marker.java
+TYPE: class Marker
+FIELD: String name;
+FIELD: String color;
+FIELD: int price;
+FIELD: int year;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\violation\ViolationDemo.java
+TYPE: class ViolationDemo
+

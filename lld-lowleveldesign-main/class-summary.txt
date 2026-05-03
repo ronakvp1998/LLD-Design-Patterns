@@ -1,0 +1,2132 @@
+FILE: src\main\java\com\conceptcoding\additionalpatterns\mvc\controller\BlogController.java
+TYPE: class BlogController
+FIELD: private final BlogView view;
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\mvc\model\Blog.java
+TYPE: class Blog
+FIELD: private String title;
+FIELD: private String content;
+FIELD: private String author;
+FIELD: private Date createdAt;
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\mvc\MVCPatternDemo.java
+TYPE: class MVCPatternDemo
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\mvc\view\BlogView.java
+TYPE: class BlogView
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\Bike.java
+TYPE: class Bike
+FIELD: private String model;
+FIELD: private String color;
+FIELD: private int seatingCapacity;
+FIELD: private int fuelTankCapacity;
+FIELD: private boolean isAvailableForTestDrive;
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\Car.java
+TYPE: class Car
+FIELD: private String model;
+FIELD: private String color;
+FIELD: private int seatingCapacity;
+FIELD: private int fuelTankCapacity;
+FIELD: private boolean isAvailableForTestDrive;
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\problem\ProblemDemo.java
+TYPE: class ProblemDemo
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\problem\VehicleFactory.java
+TYPE: class VehicleFactory
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\solution\NullVehicle.java
+TYPE: class NullVehicle
+FIELD: private final String model;
+FIELD: private final String color;
+FIELD: private final int seatingCapacity;
+FIELD: private final int fuelTankCapacity;
+FIELD: private final boolean isAvailableForTestDrive;
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\solution\SolutionDemo.java
+TYPE: class SolutionDemo
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\solution\VehicleFactory.java
+TYPE: class VehicleFactory
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\Vehicle.java
+TYPE: class Vehicle
+METHOD: public abstract void start();
+METHOD: public abstract void stop();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\DebugLogProcessor.java
+TYPE: class DebugLogProcessor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\ErrorLogProcessor.java
+TYPE: class ErrorLogProcessor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\FatalLogProcessor.java
+TYPE: class FatalLogProcessor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\InfoLogProcessor.java
+TYPE: class InfoLogProcessor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\LoggerDemo.java
+TYPE: class LoggerDemo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\LogProcessor.java
+TYPE: class LogProcessor
+FIELD: int level;
+FIELD: LogProcessor nextLoggerProcessor;
+METHOD: abstract protected void write(String message);
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\problem\AirConditioner.java
+TYPE: class AirConditioner
+FIELD: boolean isOn;
+FIELD: int temperature;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\problem\Bulb.java
+TYPE: class Bulb
+FIELD: boolean isOn;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\problem\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\AirConditioner.java
+TYPE: class AirConditioner
+FIELD: boolean isOn;
+FIELD: int temperature;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\ICommand.java
+TYPE: interface ICommand
+METHOD: void execute();
+METHOD: void undo();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\RemoteController.java
+TYPE: class RemoteController
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\SetTemperatureCommand.java
+TYPE: class SetTemperatureCommand
+FIELD: private final AirConditioner ac;
+FIELD: private final int newTemperature;
+FIELD: private int previousTemperature;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\TurnOffCommand.java
+TYPE: class TurnOffCommand
+FIELD: private final AirConditioner ac;
+FIELD: private boolean previousState;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\TurnOnCommand.java
+TYPE: class TurnOnCommand
+FIELD: private final AirConditioner ac;
+FIELD: private boolean previousState;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\AbstractExpression.java
+TYPE: interface AbstractExpression
+METHOD: int interpret(Context context);
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\AddNonTerminalExpression.java
+TYPE: class AddNonTerminalExpression
+FIELD: private final AbstractExpression rightExpression;
+FIELD: private final AbstractExpression leftExpression;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\BinaryNonTerminalExpression.java
+TYPE: class BinaryNonTerminalExpression
+FIELD: AbstractExpression leftExpression;
+FIELD: AbstractExpression rightExpression;
+FIELD: char operator;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\Context.java
+TYPE: class Context
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\MultiplyNonTerminalExpression.java
+TYPE: class MultiplyNonTerminalExpression
+FIELD: private final AbstractExpression leftExpression;
+FIELD: private final AbstractExpression rightExpression;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\NumberTerminalExpression.java
+TYPE: class NumberTerminalExpression
+FIELD: String stringValue;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\collections\LinkedHashSetExample.java
+TYPE: class LinkedHashSetExample
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\Book.java
+TYPE: class Book
+FIELD: private final String title;
+FIELD: private final String author;
+FIELD: private final String isbn;
+FIELD: private int price;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\BookCollection.java
+TYPE: interface BookCollection
+METHOD: Iterator<Book> createIterator();
+METHOD: Iterator<Book> createReverseIterator();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\Iterator.java
+TYPE: interface Iterator
+METHOD: boolean hasNext();
+METHOD: T next();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\Library.java
+TYPE: class Library
+FIELD: private final List<Book> books;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\LibraryIterator.java
+TYPE: class LibraryIterator
+FIELD: private final List<Book> books;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\LibraryIteratorDemo.java
+TYPE: class LibraryIteratorDemo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\ReverseLibraryIterator.java
+TYPE: class ReverseLibraryIterator
+FIELD: private final List<Book> books;
+FIELD: private int position;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\problem\Book.java
+TYPE: class Book
+FIELD: private final String title;
+FIELD: private final String author;
+FIELD: private final String isbn;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\problem\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\mediator\AuctionDemo.java
+TYPE: class AuctionDemo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\mediator\AuctionHouse.java
+TYPE: class AuctionHouse
+FIELD: private List<IColleague> bidders;
+FIELD: private String itemName;
+FIELD: private double currentHighestBid;
+FIELD: private IColleague currentHighestBidder;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\mediator\AuctionMediator.java
+TYPE: interface AuctionMediator
+METHOD: void registerBidder(IColleague bidder);
+METHOD: void placeBid(IColleague bidder, double bidAmount);
+METHOD: void closeAuction();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\mediator\Bidder.java
+TYPE: class Bidder
+FIELD: protected String name;
+FIELD: protected AuctionMediator mediator;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\mediator\IColleague.java
+TYPE: interface IColleague
+METHOD: void placeBid(double amount);
+METHOD: void receiveBidNotification(double bidAmount);
+METHOD: String getName();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\memento\ApplicationConfiguration.java
+TYPE: class ApplicationConfiguration
+FIELD: private String theme;
+FIELD: private int fontSize;
+FIELD: private boolean notificationsEnabled;
+FIELD: private String language;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\memento\ConfigurationManager.java
+TYPE: class ConfigurationManager
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\memento\ConfigurationMemento.java
+TYPE: class ConfigurationMemento
+FIELD: private final String theme;
+FIELD: private final int fontSize;
+FIELD: private final boolean notificationsEnabled;
+FIELD: private final String language;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\memento\MementoDemo.java
+TYPE: class MementoDemo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\notifymefeature\ECommerceStockNotificationApp.java
+TYPE: class ECommerceStockNotificationApp
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\notifymefeature\observable\IphoneProductObservable.java
+TYPE: class IphoneProductObservable
+FIELD: private final String productId;
+FIELD: private final String productName;
+FIELD: private final double price;
+FIELD: private final List<StockNotificationObserver> stockObservers;
+FIELD: private int stockQuantity;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\notifymefeature\observable\StockAvailabilityObservable.java
+TYPE: interface StockAvailabilityObservable
+METHOD: void addStockObserver(StockNotificationObserver observer);
+METHOD: void removeStockObserver(StockNotificationObserver observer);
+METHOD: void notifyStockObservers();
+METHOD: boolean purchase(int quantity);
+METHOD: void restock(int quantity);
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\notifymefeature\observer\EmailNotificationObserver.java
+TYPE: class EmailNotificationObserver
+FIELD: private final String userId;
+FIELD: private final String emailAddress;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\notifymefeature\observer\PushNotificationObserver.java
+TYPE: class PushNotificationObserver
+FIELD: private final String userId;
+FIELD: private final String deviceToken;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\notifymefeature\observer\StockNotificationObserver.java
+TYPE: interface StockNotificationObserver
+METHOD: void update();
+METHOD: String getNotificationMethod();
+METHOD: String getUserId();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\weatherstation\observable\WeatherObservable.java
+TYPE: interface WeatherObservable
+METHOD: void addObserver(WeatherObserver observer);
+METHOD: void removeObserver(WeatherObserver observer);
+METHOD: void notifyObservers();
+METHOD: void setWeatherReadings(float temperature, float humidity, float pressure);
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\weatherstation\observable\WeatherStation.java
+TYPE: class WeatherStation
+FIELD: private final List<WeatherObserver> observers;
+FIELD: private float temperature;
+FIELD: private float humidity;
+FIELD: private float pressure;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\weatherstation\observer\CurrentConditionsDisplay.java
+TYPE: class CurrentConditionsDisplay
+FIELD: private final WeatherObservable weatherStation;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\weatherstation\observer\ForecastDisplay.java
+TYPE: class ForecastDisplay
+FIELD: private final WeatherObservable weatherStation;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\weatherstation\observer\WeatherObserver.java
+TYPE: interface WeatherObserver
+METHOD: void update();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\observer\weatherstation\WeatherStationApp.java
+TYPE: class WeatherStationApp
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\context\Inventory.java
+TYPE: class Inventory
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\context\Item.java
+TYPE: class Item
+FIELD: ItemType type;
+FIELD: int price;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\context\ItemShelf.java
+TYPE: class ItemShelf
+FIELD: int code;
+FIELD: Item item;
+FIELD: boolean soldOut;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\context\ItemType.java
+TYPE: enum ItemType
+FIELD: SODA;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\context\VendingMachine.java
+TYPE: class VendingMachine
+FIELD: private State vendingMachineState;
+FIELD: private Inventory inventory;
+FIELD: private List<Coin> coinList;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\VendingMachineAppDemo.java
+TYPE: class VendingMachineAppDemo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\vendingmachinestates\Coin.java
+TYPE: enum Coin
+METHOD: QUARTER(25);
+FIELD: public int value;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\vendingmachinestates\impl\DispenseState.java
+TYPE: class DispenseState
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\vendingmachinestates\impl\HasMoneyState.java
+TYPE: class HasMoneyState
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\vendingmachinestates\impl\IdleState.java
+TYPE: class IdleState
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\vendingmachinestates\impl\SelectionState.java
+TYPE: class SelectionState
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\state\vendingmachinestates\State.java
+TYPE: class State
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\paymentmethods\problem\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\paymentmethods\problem\PaymentProcessor.java
+TYPE: class PaymentProcessor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\paymentmethods\solution\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\paymentmethods\solution\ShoppingCart.java
+TYPE: class ShoppingCart
+FIELD: private PaymentStrategy paymentStrategy;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\paymentmethods\solution\strategy\CreditCardPayment.java
+TYPE: class CreditCardPayment
+FIELD: private String cardNumber;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\paymentmethods\solution\strategy\PaymentStrategy.java
+TYPE: interface PaymentStrategy
+METHOD: void pay(double amount);
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\paymentmethods\solution\strategy\PayPalPayment.java
+TYPE: class PayPalPayment
+FIELD: private String email;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\paymentmethods\solution\strategy\UPIPayment.java
+TYPE: class UPIPayment
+FIELD: private String upiId;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\problem\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\problem\OffRoadVehicle.java
+TYPE: class OffRoadVehicle
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\problem\PassengerVehicle.java
+TYPE: class PassengerVehicle
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\problem\SportsVehicle.java
+TYPE: class SportsVehicle
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\problem\Vehicle.java
+TYPE: class Vehicle
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\solution\context\GoodsVehicle.java
+TYPE: class GoodsVehicle
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\solution\context\HybridVehicle.java
+TYPE: class HybridVehicle
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\solution\context\OffRoadVehicle.java
+TYPE: class OffRoadVehicle
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\solution\context\SportsVehicle.java
+TYPE: class SportsVehicle
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\solution\context\Vehicle.java
+TYPE: class Vehicle
+FIELD: DriveStrategy driveStrategy;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\solution\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\solution\strategies\DriveStrategy.java
+TYPE: interface DriveStrategy
+METHOD: public void drive();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\solution\strategies\EVDrive.java
+TYPE: class EVDrive
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\solution\strategies\NormalDrive.java
+TYPE: class NormalDrive
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\strategy\vehicledrivemodes\solution\strategies\SportsDrive.java
+TYPE: class SportsDrive
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\templatemethod\BankTransfer.java
+TYPE: class BankTransfer
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\templatemethod\MerchantPayment.java
+TYPE: class MerchantPayment
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\templatemethod\PaymentFlow.java
+TYPE: class PaymentFlow
+METHOD: public abstract void validateRequest();
+METHOD: public abstract void debitAmount();
+METHOD: public abstract void calculateFees();
+METHOD: public abstract void creditAmount();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\templatemethod\TemplateDemo.java
+TYPE: class TemplateDemo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\problem\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\problem\SuiteHotelRoom.java
+TYPE: class SuiteHotelRoom
+FIELD: private String roomNumber;
+FIELD: private String numberOfRooms;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\solution\elements\DeluxeRoom.java
+TYPE: class DeluxeRoom
+FIELD: private final String roomNumber;
+FIELD: private final boolean hasJacuzzi;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\solution\elements\IRoom.java
+TYPE: interface IRoom
+METHOD: void accept(IRoomVisitor visitor);
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\solution\elements\StandardRoom.java
+TYPE: class StandardRoom
+FIELD: private final String roomNumber;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\solution\elements\SuiteRoom.java
+TYPE: class SuiteRoom
+FIELD: private final String roomNumber;
+FIELD: private final int numberOfRooms;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\solution\HotelVisitorDemo.java
+TYPE: class HotelVisitorDemo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\solution\visitors\HousekeepingVisitor.java
+TYPE: class HousekeepingVisitor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\solution\visitors\IRoomVisitor.java
+TYPE: interface IRoomVisitor
+METHOD: void visitStandardRoom(StandardRoom room);
+METHOD: void visitDeluxeRoom(DeluxeRoom room);
+METHOD: void visitSuiteRoom(SuiteRoom room);
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\solution\visitors\PricingVisitor.java
+TYPE: class PricingVisitor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\visitor\solution\visitors\RoomServiceVisitor.java
+TYPE: class RoomServiceVisitor
+FIELD: private final String orderDetails;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\AbstractFactoryDemo.java
+TYPE: class AbstractFactoryDemo
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\CarExterior.java
+TYPE: interface CarExterior
+METHOD: void addExteriorComponents();
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\CarFactory.java
+TYPE: interface CarFactory
+METHOD: CarInterior createInterior();
+METHOD: CarExterior createExterior();
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\CarFactoryProvider.java
+TYPE: enum CarType
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\CarInterior.java
+TYPE: interface CarInterior
+METHOD: void addInteriorComponents();
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\EconomyCarExterior.java
+TYPE: class EconomyCarExterior
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\EconomyCarFactory.java
+TYPE: class EconomyCarFactory
+FIELD: private String brand;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\EconomyCarInterior.java
+TYPE: class EconomyCarInterior
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\LuxuryCarExterior.java
+TYPE: class LuxuryCarExterior
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\LuxuryCarFactory.java
+TYPE: class LuxuryCarFactory
+FIELD: private final String brand;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\abstractfactory\LuxuryCarInterior.java
+TYPE: class LuxuryCarInterior
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\builder\problem\Student.java
+TYPE: class Student
+FIELD: int rollNumber;
+FIELD: int age;
+FIELD: String name;
+FIELD: String branch;
+FIELD: String fatherName;
+FIELD: String motherName;
+FIELD: List<String> subjects;
+FIELD: String mobileNo;
+FIELD: String emailId;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\builder\solution\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\builder\solution\EngineeringStudentBuilder.java
+TYPE: class EngineeringStudentBuilder
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\builder\solution\MBAStudentBuilder.java
+TYPE: class MBAStudentBuilder
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\builder\solution\Student.java
+TYPE: class Student
+FIELD: int rollNumber;
+FIELD: int age;
+FIELD: String name;
+FIELD: String branch;
+FIELD: String fatherName;
+FIELD: String motherName;
+FIELD: List<String> subjects;
+FIELD: String mobileNo;
+FIELD: String emailId;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\builder\solution\StudentBuilder.java
+TYPE: class StudentBuilder
+FIELD: int rollNumber;
+FIELD: int age;
+FIELD: String name;
+FIELD: String branch;
+FIELD: String fatherName;
+FIELD: String motherName;
+FIELD: List<String> subjects;
+FIELD: String mobileNo;
+FIELD: String emailId;
+METHOD: abstract public StudentBuilder setSubjects();
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\builder\solution\StudentRegistrationDirector.java
+TYPE: class StudentRegistrationDirector
+FIELD: StudentBuilder studentBuilder;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\Circle.java
+TYPE: class Circle
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\factorymethod\CircleCreator.java
+TYPE: class CircleCreator
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\factorymethod\FactoryMethodDemo.java
+TYPE: class FactoryMethodDemo
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\factorymethod\RectangleCreator.java
+TYPE: class RectangleCreator
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\factorymethod\ShapeFactory.java
+TYPE: class ShapeFactory
+METHOD: public abstract Shape createShape();
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\factorymethod\SquareCreator.java
+TYPE: class SquareCreator
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\Rectangle.java
+TYPE: class Rectangle
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\Shape.java
+TYPE: interface Shape
+METHOD: void computeArea();
+METHOD: void draw();
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\ShapeType.java
+TYPE: enum ShapeType
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\simplefactory\ShapeFactory.java
+TYPE: class ShapeFactory
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\simplefactory\SimpleFactoryDemo.java
+TYPE: class SimpleFactoryDemo
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\factory\Square.java
+TYPE: class Square
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\objectpool\problem\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\objectpool\problem\DBConnectionPoolManager.java
+TYPE: class DBConnectionPoolManager
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\objectpool\resource\DBConnection.java
+TYPE: class DBConnection
+FIELD: Connection mySQLConnection;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\objectpool\solution\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\objectpool\solution\DBConnectionPoolManager.java
+TYPE: class DBConnectionPoolManager
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\prototype\problem\DemoProblem.java
+TYPE: class DemoProblem
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\prototype\problem\Student.java
+TYPE: class Student
+FIELD: int id;
+FIELD: String name;
+FIELD: String branch;
+FIELD: private int rollNo;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\prototype\solution\DemoSolution.java
+TYPE: class DemoSolution
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\prototype\solution\Student.java
+TYPE: class Student
+FIELD: int id;
+FIELD: String name;
+FIELD: String branch;
+FIELD: boolean inHighSchool;
+FIELD: private int rollNo;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\prototype\solution\StudentPrototype.java
+TYPE: interface StudentPrototype
+METHOD: StudentPrototype clone();
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\singleton\DBConnectionDoubleLocking.java
+TYPE: class DBConnectionDoubleLocking
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\singleton\DBConnectionEager.java
+TYPE: class DBConnectionEager
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\singleton\DBConnectionLazy.java
+TYPE: class DBConnectionLazy
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\singleton\DBConnectionThreadSafe.java
+TYPE: class DBConnectionThreadSafe
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\singleton\dclbugfix\DBConnectionDoubleCheckedLockFix.java
+TYPE: class DBConnectionDoubleCheckedLockFix
+FIELD: int portNumber;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\singleton\dclbugfix\DBConnectionDoubleCheckedLockIssue.java
+TYPE: class DBConnectionDoubleCheckedLockIssue
+FIELD: int portNumber;
+
+FILE: src\main\java\com\conceptcoding\creationalpatterns\singleton\SingletonDemo.java
+TYPE: class SingletonDemo
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\AmountWithdrawal\CashWithdrawProcessor.java
+TYPE: class CashWithdrawProcessor
+FIELD: CashWithdrawProcessor nextCashWithdrawalProcessor;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\AmountWithdrawal\FiveHundredWithdrawProcessor.java
+TYPE: class FiveHundredWithdrawProcessor
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\AmountWithdrawal\OneHundredWithdrawProcessor.java
+TYPE: class OneHundredWithdrawProcessor
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\AmountWithdrawal\TwoThousandWithdrawProcessor.java
+TYPE: class TwoThousandWithdrawProcessor
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMRoomComponents\ATM.java
+TYPE: class ATM
+FIELD: ATMState currentATMState;
+FIELD: int noOfTwoThousandNotes;
+FIELD: int noOfFiveHundredNotes;
+FIELD: int noOfOneHundredNotes;
+FIELD: private int atmBalance;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMRoomComponents\ATMRoom.java
+TYPE: class ATMRoom
+FIELD: ATM atm;
+FIELD: User user;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMRoomComponents\Card.java
+TYPE: class Card
+FIELD: private int cardNumber;
+FIELD: private int cvv;
+FIELD: private int expiryDate;
+FIELD: private int holderName;
+FIELD: private UserBankAccount bankAccount;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMRoomComponents\User.java
+TYPE: class User
+FIELD: Card card;
+FIELD: UserBankAccount bankAccount;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMRoomComponents\UserBankAccount.java
+TYPE: class UserBankAccount
+FIELD: int balance;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMStates\ATMState.java
+TYPE: class ATMState
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMStates\CashWithdrawalState.java
+TYPE: class CashWithdrawalState
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMStates\CheckBalanceState.java
+TYPE: class CheckBalanceState
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMStates\HasCardState.java
+TYPE: class HasCardState
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMStates\IdleState.java
+TYPE: class IdleState
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\ATMStates\SelectOperationState.java
+TYPE: class SelectOperationState
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\atm\enums\TransactionType.java
+TYPE: enum TransactionType
+FIELD: BALANCE_CHECK;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\BookMyShowApp.java
+TYPE: class BookMyShowApp
+FIELD: private TheatreController theatreController;
+FIELD: private BookingController bookingController;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\controllers\BookingController.java
+TYPE: class BookingController
+FIELD: private final BookingService bookingService;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\controllers\TheatreController.java
+TYPE: class TheatreController
+FIELD: private final TheatreService theatreService;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\entities\Booking.java
+TYPE: class Booking
+FIELD: private final UUID bookingId;
+FIELD: private final User user;
+FIELD: private final Show show;
+FIELD: private final List<Integer> seats;
+FIELD: private final Payment payment;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\entities\Movie.java
+TYPE: class Movie
+FIELD: private final String name;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\entities\Payment.java
+TYPE: class Payment
+FIELD: private final UUID paymentId;
+FIELD: private final PaymentStatus status;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\entities\Screen.java
+TYPE: class Screen
+FIELD: private final int screenId;
+FIELD: private final List<Seat> seats;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\entities\Seat.java
+TYPE: class Seat
+FIELD: private final int seatId;
+FIELD: private final SeatCategory category;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\entities\Show.java
+TYPE: class Show
+FIELD: private final Movie movie;
+FIELD: private final LocalDate showDate;
+FIELD: private final LocalTime startTime;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\entities\Theatre.java
+TYPE: class Theatre
+FIELD: private final String name;
+FIELD: private final City city;
+FIELD: private final List<Screen> screens;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\entities\User.java
+TYPE: class User
+FIELD: private final String userId;
+FIELD: private final String name;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\enums\City.java
+TYPE: enum City
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\enums\PaymentStatus.java
+TYPE: enum PaymentStatus
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\enums\SeatCategory.java
+TYPE: enum SeatCategory
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\enums\SeatStatus.java
+TYPE: enum SeatStatus
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\service\BookingService.java
+TYPE: class BookingService
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\book_my_show\service\TheatreService.java
+TYPE: class TheatreService
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\Bill\Bill.java
+TYPE: class Bill
+FIELD: private int billId;
+FIELD: private int reservationId;
+FIELD: private double totalBillAmount;
+FIELD: private boolean billPaid;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\Bill\BillingStrategy.java
+TYPE: interface BillingStrategy
+METHOD: Bill generateBill(Reservation reservation);
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\Bill\BillManager.java
+TYPE: class BillManager
+FIELD: private BillingStrategy billingStrategy;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\Bill\DailyBillingStrategy.java
+TYPE: class DailyBillingStrategy
+FIELD: VehicleInventoryManager vehicleInventoryManager;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\Location.java
+TYPE: class Location
+FIELD: int buildingNo;
+FIELD: String area;
+FIELD: String city;
+FIELD: String state;
+FIELD: String country;
+FIELD: int pincode;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\payment\Payment.java
+TYPE: class Payment
+FIELD: private final int paymentId;
+FIELD: private final int billId;
+FIELD: private final double amountPaid;
+FIELD: private final PaymentMode paymentMode;
+FIELD: private final Date paymentDate;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\payment\PaymentManager.java
+TYPE: class PaymentManager
+FIELD: private PaymentStrategy paymentStrategy;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\payment\PaymentMode.java
+TYPE: enum PaymentMode
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\payment\PaymentStrategy.java
+TYPE: interface PaymentStrategy
+METHOD: Payment processPayment(Bill bill, double paymentAmount);
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\payment\UPIPaymentStrategy.java
+TYPE: class UPIPaymentStrategy
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\product\DateInterval.java
+TYPE: class DateInterval
+FIELD: private final LocalDate from;
+FIELD: private final LocalDate to;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\product\Vehicle.java
+TYPE: class Vehicle
+FIELD: private final int vehicleID;
+FIELD: private final String vehicleNumber;
+FIELD: private final VehicleType vehicleType;
+FIELD: private double dailyRentalCost;
+FIELD: private volatile VehicleStatus vehicleStatus;
+FIELD: private String companyName;
+FIELD: private String modelName;
+FIELD: private int kmDriven;
+FIELD: private int average;
+FIELD: private int cc;
+FIELD: private int noOfSeat;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\product\VehicleInventoryManager.java
+TYPE: class VehicleInventoryManager
+FIELD: private ReservationRepository reservationRepository;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\product\VehicleStatus.java
+TYPE: enum VehicleStatus
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\product\VehicleType.java
+TYPE: enum VehicleType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\reservation\Reservation.java
+TYPE: class Reservation
+FIELD: private final int reservationId;
+FIELD: private final int vehicleId;
+FIELD: private final int userId;
+FIELD: private final LocalDate dateBookedFrom;
+FIELD: private final LocalDate dateBookedTo;
+FIELD: private final ReservationType reservationType;
+FIELD: private ReservationStatus reservationStatus;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\reservation\ReservationManager.java
+TYPE: class ReservationManager
+FIELD: private final VehicleInventoryManager inventory;
+FIELD: private final ReservationRepository reservationRepository;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\reservation\ReservationRepository.java
+TYPE: class ReservationRepository
+FIELD: private final Map<Integer, Reservation> reservations;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\reservation\ReservationStatus.java
+TYPE: enum ReservationStatus
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\reservation\ReservationType.java
+TYPE: enum ReservationType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\Store.java
+TYPE: class Store
+FIELD: private final int storeId;
+FIELD: private final Location storeLocation;
+FIELD: private final VehicleInventoryManager inventory;
+FIELD: private final ReservationManager reservationManager;
+FIELD: private final BillManager billManager;
+FIELD: private final PaymentManager paymentManager;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\User.java
+TYPE: class User
+FIELD: int userId;
+FIELD: String userName;
+FIELD: String drivingLicenseNo;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\carrental\VehicleRentalSystem.java
+TYPE: class VehicleRentalSystem
+FIELD: List<Store> storeList;
+FIELD: List<User> userList;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\Board.java
+TYPE: class Board
+FIELD: Cell[][] cells;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\Cell.java
+TYPE: class Cell
+FIELD: private Piece piece;
+FIELD: private Position position;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\ChessDemo.java
+TYPE: class ChessDemo
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\enums\GameStatus.java
+TYPE: enum GameStatus
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\enums\PieceColour.java
+TYPE: enum PieceColour
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\enums\PieceType.java
+TYPE: enum PieceType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\Game.java
+TYPE: class Game
+FIELD: private Player player1;
+FIELD: private Player player2;
+FIELD: private Board board;
+FIELD: private Player currentTurn;
+FIELD: private GameStatus status;
+FIELD: private List<Move> movesHistory;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\Move.java
+TYPE: class Move
+FIELD: private Player player;
+FIELD: private Cell start;
+FIELD: private Cell end;
+FIELD: private Piece pieceMoved;
+FIELD: private Piece pieceKilled;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\pieces\Bishop.java
+TYPE: class Bishop
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\pieces\King.java
+TYPE: class King
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\pieces\Knight.java
+TYPE: class Knight
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\pieces\Pawn.java
+TYPE: class Pawn
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\pieces\Piece.java
+TYPE: class Piece
+FIELD: private PieceColour colour;
+FIELD: private boolean isCaptured;
+FIELD: private PieceType pieceType;
+METHOD: public abstract boolean isValidMove(Board board, Cell start, Cell end);
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\pieces\Queen.java
+TYPE: class Queen
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\pieces\Rook.java
+TYPE: class Rook
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\Player.java
+TYPE: class Player
+FIELD: private String name;
+FIELD: private PieceColour playingSide;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\chess\Position.java
+TYPE: class Position
+FIELD: private int row;
+FIELD: private int col;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\coupons\CouponDecorator.java
+TYPE: class CouponDecorator
+FIELD: Product product;
+FIELD: int discountPercentage;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\coupons\PercentageCouponDecorator.java
+TYPE: class PercentageCouponDecorator
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\coupons\TypeCouponDecorator.java
+TYPE: class TypeCouponDecorator
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\product\Item1.java
+TYPE: class Item1
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\product\Item2.java
+TYPE: class Item2
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\product\Item3.java
+TYPE: class Item3
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\product\Item4.java
+TYPE: class Item4
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\product\Product.java
+TYPE: class Product
+FIELD: String name;
+FIELD: double originalPrice;
+FIELD: ProductType type;
+METHOD: public abstract double getPrice();
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\product\ProductType.java
+TYPE: enum ProductType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\couponappln\ShoppingCart.java
+TYPE: class ShoppingCart
+FIELD: List<Product> productList;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Inning\BallDetails.java
+TYPE: class BallDetails
+FIELD: public int ballNumber;
+FIELD: public BallType ballType;
+FIELD: public RunType runType;
+FIELD: public PlayerDetails playedBy;
+FIELD: public PlayerDetails bowledBy;
+FIELD: public Wicket wicket;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Inning\BallType.java
+TYPE: enum BallType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Inning\InningDetails.java
+TYPE: class InningDetails
+FIELD: Team battingTeam;
+FIELD: Team bowlingTeam;
+FIELD: MatchType matchType;
+FIELD: List<OverDetails> overs;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Inning\OverDetails.java
+TYPE: class OverDetails
+FIELD: int overNumber;
+FIELD: List<BallDetails> balls;
+FIELD: int extraBallsCount;
+FIELD: PlayerDetails bowledBy;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Inning\RunType.java
+TYPE: enum RunType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Match.java
+TYPE: class Match
+FIELD: Team teamA;
+FIELD: Team teamB;
+FIELD: Date matchDate;
+FIELD: String venue;
+FIELD: Team tossWinner;
+FIELD: InningDetails[] innings;
+FIELD: MatchType matchType;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\MatchType.java
+TYPE: interface MatchType
+METHOD: public int noOfOvers();
+METHOD: public int maxOverCountBowlers();
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\OneDayMatch.java
+TYPE: class OneDayMatch
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\ScoreUpdater\BattingScoreUpdater.java
+TYPE: class BattingScoreUpdater
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\ScoreUpdater\BowlingScoreUpdater.java
+TYPE: class BowlingScoreUpdater
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\ScoreUpdater\ScoreUpdaterObserver.java
+TYPE: interface ScoreUpdaterObserver
+METHOD: public void update(BallDetails ballDetails);
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\T20Match.java
+TYPE: class T20Match
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Team\Player\Person.java
+TYPE: class Person
+FIELD: public String name;
+FIELD: public int age;
+FIELD: public String address;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Team\Player\PlayerBattingController.java
+TYPE: class PlayerBattingController
+FIELD: Queue<PlayerDetails> yetToPlay;
+FIELD: PlayerDetails striker;
+FIELD: PlayerDetails nonStriker;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Team\Player\PlayerBowlingController.java
+TYPE: class PlayerBowlingController
+FIELD: Deque<PlayerDetails> bowlersList;
+FIELD: Map<PlayerDetails, Integer> bowlerVsOverCount;
+FIELD: PlayerDetails currentBowler;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Team\Player\PlayerDetails.java
+TYPE: class PlayerDetails
+FIELD: public Person person;
+FIELD: public PlayerType playerType;
+FIELD: public BattingScoreCard battingScoreCard;
+FIELD: public BowlingScoreCard bowlingScoreCard;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Team\Player\PlayerType.java
+TYPE: enum PlayerType
+FIELD: ALLROUNDER;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Team\Player\Score\BattingScoreCard.java
+TYPE: class BattingScoreCard
+FIELD: public int totalRuns;
+FIELD: public int totalBallsPlayed;
+FIELD: public int totalFours;
+FIELD: public int totalSix;
+FIELD: public double strikeRate;
+FIELD: public Wicket wicketDetails;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Team\Player\Score\BowlingScoreCard.java
+TYPE: class BowlingScoreCard
+FIELD: public int totalOversCount;
+FIELD: public int runsGiven;
+FIELD: public int wicketsTaken;
+FIELD: public int noBallCount;
+FIELD: public int wideBallCount;
+FIELD: public double economyRate;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Team\Team.java
+TYPE: class Team
+FIELD: public String teamName;
+FIELD: public Queue<PlayerDetails> playing11;
+FIELD: public List<PlayerDetails> bench;
+FIELD: public PlayerBattingController battingController;
+FIELD: public PlayerBowlingController bowlingController;
+FIELD: public boolean isWinner;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Team\Wicket.java
+TYPE: class Wicket
+FIELD: public WicketType wicketType;
+FIELD: public PlayerDetails takenBy;
+FIELD: public OverDetails overDetail;
+FIELD: public BallDetails ballDetail;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\cricbuzz\Team\WicketType.java
+TYPE: enum WicketType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\Building.java
+TYPE: class Building
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\Door.java
+TYPE: class Door
+FIELD: private DoorState doorState;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\ElevatorCar.java
+TYPE: class ElevatorCar
+FIELD: int id;
+FIELD: int currentFloor;
+FIELD: int nextFloorStoppage;
+FIELD: ElevatorDirection movingDirection;
+FIELD: Door door;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\ElevatorController.java
+TYPE: class ElevatorController
+FIELD: PriorityBlockingQueue<Integer> upMinPQ;
+FIELD: PriorityBlockingQueue<Integer> downMaxPQ;
+FIELD: ElevatorCar elevatorCar;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\ElevatorScheduler.java
+TYPE: class ElevatorScheduler
+FIELD: private final List<ElevatorController> controllers;
+FIELD: private ElevatorSelectionStrategy strategy;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\ElevatorSelectionStrategy.java
+TYPE: interface ElevatorSelectionStrategy
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\enums\DoorState.java
+TYPE: enum DoorState
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\enums\ElevatorDirection.java
+TYPE: enum ElevatorDirection
+FIELD: IDLE;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\ExternalButton.java
+TYPE: class ExternalButton
+FIELD: private final ExternalDispatcher dispatcher;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\ExternalDispatcher.java
+TYPE: class ExternalDispatcher
+FIELD: ElevatorScheduler scheduler;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\Floor.java
+TYPE: class Floor
+FIELD: int floorNumber;
+FIELD: ExternalButton upButton;
+FIELD: ExternalButton downButton;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\InternalButton.java
+TYPE: class InternalButton
+FIELD: private final ElevatorController controller;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\InternalDispatcher.java
+TYPE: class InternalDispatcher
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\LeastBusyStrategy.java
+TYPE: class LeastBusyStrategy
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\elevator\NearestElevatorStrategy.java
+TYPE: class NearestElevatorStrategy
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\meetingscheduler\Calendar.java
+TYPE: class Calendar
+FIELD: private Map<TimeInterval, Meeting> meetings;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\meetingscheduler\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\meetingscheduler\Meeting.java
+TYPE: class Meeting
+FIELD: private String meetingId;
+FIELD: private String subject;
+FIELD: private TimeInterval timeInterval;
+FIELD: private User organizer;
+FIELD: private MeetingRoom meetingRoom;
+FIELD: private Map<User, ParticipantResponse> attendees;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\meetingscheduler\MeetingRoom.java
+TYPE: class MeetingRoom
+FIELD: private int id;
+FIELD: private String name;
+FIELD: private int capacity;
+FIELD: private List<TimeInterval> bookedSlots;
+FIELD: private Calendar calendar;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\meetingscheduler\MeetingScheduler.java
+TYPE: class MeetingScheduler
+FIELD: private List<MeetingRoom> allMeetingRooms;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\meetingscheduler\Notification.java
+TYPE: class Notification
+FIELD: private int notificationId;
+FIELD: private String message;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\meetingscheduler\ParticipantResponse.java
+TYPE: enum ParticipantResponse
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\meetingscheduler\ParticipantType.java
+TYPE: enum ParticipantType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\meetingscheduler\TimeInterval.java
+TYPE: class TimeInterval
+FIELD: private LocalDateTime startTime;
+FIELD: private LocalDateTime endTime;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\meetingscheduler\User.java
+TYPE: class User
+FIELD: private String name;
+FIELD: private String email;
+FIELD: private Calendar calendar;
+FIELD: private ParticipantType participantType;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\Entity\ParkingSpot.java
+TYPE: class ParkingSpot
+FIELD: private final String spotId;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\Entity\Vehicle.java
+TYPE: class Vehicle
+FIELD: String vehicleNumber;
+FIELD: VehicleType vehicleType;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\enums\VehicleType.java
+TYPE: enum VehicleType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\LookupStrategy\ParkingSpotLookupStrategy.java
+TYPE: interface ParkingSpotLookupStrategy
+METHOD: ParkingSpot selectSpot(List<ParkingSpot> spots);
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\LookupStrategy\RandomLookupStrategy.java
+TYPE: class RandomLookupStrategy
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\parkinglot\EntranceGate.java
+TYPE: class EntranceGate
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\parkinglot\ExitGate.java
+TYPE: class ExitGate
+FIELD: private final CostComputation costComputation;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\parkinglot\ParkingBuilding.java
+TYPE: class ParkingBuilding
+FIELD: private final List<ParkingLevel> levels;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\parkinglot\ParkingLevel.java
+TYPE: class ParkingLevel
+FIELD: private final int levelNumber;
+FIELD: private final Map<VehicleType, ParkingSpotManager> managers;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\parkinglot\ParkingLot.java
+TYPE: class ParkingLot
+FIELD: private final ParkingBuilding building;
+FIELD: private final EntranceGate entranceGate;
+FIELD: private final ExitGate exitGate;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\ParkingLotClient.java
+TYPE: class ParkingLotClient
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\payment\CashPayment.java
+TYPE: class CashPayment
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\payment\Payment.java
+TYPE: interface Payment
+METHOD: boolean pay(double amount);
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\payment\UPIPayment.java
+TYPE: class UPIPayment
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\pricing\CostComputation.java
+TYPE: class CostComputation
+FIELD: private final PricingStrategy pricingStrategy;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\pricing\FixedPricingStrategy.java
+TYPE: class FixedPricingStrategy
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\pricing\PricingStrategy.java
+TYPE: interface PricingStrategy
+METHOD: double calculate(Ticket ticket);
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\spotManagers\FourWheelerSpotManager.java
+TYPE: class FourWheelerSpotManager
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\spotManagers\ParkingSpotManager.java
+TYPE: class ParkingSpotManager
+FIELD: protected final List<ParkingSpot> spots;
+FIELD: protected final ParkingSpotLookupStrategy strategy;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\spotManagers\TwoWheelerSpotManager.java
+TYPE: class TwoWheelerSpotManager
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\parking_lot\Ticket.java
+TYPE: class Ticket
+FIELD: private final Vehicle vehicle;
+FIELD: private final ParkingLevel level;
+FIELD: private final ParkingSpot spot;
+FIELD: private final LocalDateTime entryTime;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\instrument\BankInstrument.java
+TYPE: class BankInstrument
+FIELD: String bankAccountNumber;
+FIELD: String ifscCode;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\instrument\BankService.java
+TYPE: class BankService
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\instrument\CardInstrument.java
+TYPE: class CardInstrument
+FIELD: String cardNumber;
+FIELD: String cvv;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\instrument\CardService.java
+TYPE: class CardService
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\instrument\Instrument.java
+TYPE: class Instrument
+FIELD: int instrumentID;
+FIELD: int userID;
+FIELD: InstrumentType instrumentType;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\instrument\InstrumentController.java
+TYPE: class InstrumentController
+FIELD: InstrumentServiceFactory instrumentControllerFactory;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\instrument\InstrumentDO.java
+TYPE: class InstrumentDO
+FIELD: int instrumentID;
+FIELD: int userID;
+FIELD: InstrumentType instrumentType;
+FIELD: String bankAccountNumber;
+FIELD: String ifsc;
+FIELD: String cardNumber;
+FIELD: String cvvNumber;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\instrument\InstrumentService.java
+TYPE: class InstrumentService
+METHOD: public abstract InstrumentDO addInstrument(InstrumentDO instrumentDO);
+METHOD: public abstract List<InstrumentDO> getInstrumentsByUserID(int userID);
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\instrument\InstrumentServiceFactory.java
+TYPE: class InstrumentServiceFactory
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\instrument\InstrumentType.java
+TYPE: enum InstrumentType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\PaymentGateway.java
+TYPE: class PaymentGateway
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\transaction\Processor.java
+TYPE: class Processor
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\transaction\Transaction.java
+TYPE: class Transaction
+FIELD: int txnID;
+FIELD: int amount;
+FIELD: int senderId;
+FIELD: int receiverId;
+FIELD: int debitInstrumentId;
+FIELD: int creditInstrumentId;
+FIELD: TransactionStatus status;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\transaction\TransactionController.java
+TYPE: class TransactionController
+FIELD: TransactionService txnService;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\transaction\TransactionDO.java
+TYPE: class TransactionDO
+FIELD: int txnID;
+FIELD: int senderId;
+FIELD: int receiverId;
+FIELD: int debitInstrumentId;
+FIELD: int creditInstrumentId;
+FIELD: int amount;
+FIELD: TransactionStatus status;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\transaction\TransactionService.java
+TYPE: class TransactionService
+FIELD: InstrumentController instrumentController;
+FIELD: Processor processor;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\transaction\TransactionStatus.java
+TYPE: enum TransactionStatus
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\user\User.java
+TYPE: class User
+FIELD: int userID;
+FIELD: String userName;
+FIELD: String email;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\user\UserController.java
+TYPE: class UserController
+FIELD: UserService userService;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\user\UserDO.java
+TYPE: class UserDO
+FIELD: int id;
+FIELD: String name;
+FIELD: String mail;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\paymentgateway\user\UserService.java
+TYPE: class UserService
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\snakeNladder\Board.java
+TYPE: class Board
+FIELD: Cell[][] cells;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\snakeNladder\Cell.java
+TYPE: class Cell
+FIELD: Jump jump;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\snakeNladder\Dice.java
+TYPE: class Dice
+FIELD: int diceCount;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\snakeNladder\Game.java
+TYPE: class Game
+FIELD: Board board;
+FIELD: Dice dice;
+FIELD: Player winner;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\snakeNladder\Jump.java
+TYPE: class Jump
+FIELD: int start;
+FIELD: int end;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\snakeNladder\Player.java
+TYPE: class Player
+FIELD: String id;
+FIELD: int currentPosition;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\snakeNladder\SnakeNLadderDemo.java
+TYPE: class SnakeNLadderDemo
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Balance.java
+TYPE: class Balance
+FIELD: double amountOwe;
+FIELD: double amountGetBack;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\BalanceSheetController.java
+TYPE: class BalanceSheetController
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Expense\Expense.java
+TYPE: class Expense
+FIELD: String expenseId;
+FIELD: String description;
+FIELD: double expenseAmount;
+FIELD: User paidByUser;
+FIELD: ExpenseSplitType splitType;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Expense\ExpenseController.java
+TYPE: class ExpenseController
+FIELD: BalanceSheetController balanceSheetController;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Expense\ExpenseSplitType.java
+TYPE: enum ExpenseSplitType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Expense\Split\EqualExpenseSplit.java
+TYPE: class EqualExpenseSplit
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Expense\Split\ExpenseSplit.java
+TYPE: interface ExpenseSplit
+METHOD: public void validateSplitRequest(List<Split> splitList, double totalAmount);
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Expense\Split\PercentageExpenseSplit.java
+TYPE: class PercentageExpenseSplit
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Expense\Split\Split.java
+TYPE: class Split
+FIELD: User user;
+FIELD: double amountOwe;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Expense\Split\UnequalExpenseSplit.java
+TYPE: class UnequalExpenseSplit
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Expense\SplitFactory.java
+TYPE: class SplitFactory
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Group\Group.java
+TYPE: class Group
+FIELD: String groupId;
+FIELD: String groupName;
+FIELD: List<User> groupMembers;
+FIELD: List<Expense> expenseList;
+FIELD: ExpenseController expenseController;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Group\GroupController.java
+TYPE: class GroupController
+FIELD: List<Group> groupList;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\Splitwise.java
+TYPE: class Splitwise
+FIELD: UserController userController;
+FIELD: GroupController groupController;
+FIELD: BalanceSheetController balanceSheetController;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\User\User.java
+TYPE: class User
+FIELD: String userId;
+FIELD: String userName;
+FIELD: UserExpenseBalanceSheet userExpenseBalanceSheet;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\User\UserController.java
+TYPE: class UserController
+FIELD: List<User> userList;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\splitwise\UserExpenseBalanceSheet.java
+TYPE: class UserExpenseBalanceSheet
+FIELD: Map<String, Balance> userVsBalance;
+FIELD: double totalYourExpense;
+FIELD: double totalPayment;
+FIELD: double totalYouOwe;
+FIELD: double totalYouGetBack;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\tictactoe\model\Board.java
+TYPE: class Board
+FIELD: public int size;
+FIELD: public PlayingPiece[][] board;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\tictactoe\model\GameStatus.java
+TYPE: enum GameStatus
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\tictactoe\model\PieceType.java
+TYPE: enum PieceType
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\tictactoe\model\Player.java
+TYPE: class Player
+FIELD: public String name;
+FIELD: public PlayingPiece playingPiece;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\tictactoe\model\PlayingPiece.java
+TYPE: class PlayingPiece
+FIELD: public PieceType pieceType;
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\tictactoe\model\PlayingPieceO.java
+TYPE: class PlayingPieceO
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\tictactoe\model\PlayingPieceX.java
+TYPE: class PlayingPieceX
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\tictactoe\PlayGame.java
+TYPE: class PlayGame
+
+FILE: src\main\java\com\conceptcoding\interviewquestions\tictactoe\TicTacToeGame.java
+TYPE: class TicTacToeGame
+FIELD: Deque<Player> players;
+FIELD: Board gameBoard;
+FIELD: Player winner;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\adapter\ImperialWeighingMachine.java
+TYPE: interface ImperialWeighingMachine
+METHOD: double getWeightInPounds();
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\adapter\ImperialWeighingMachineImpl.java
+TYPE: class ImperialWeighingMachineImpl
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\adapter\MetricWeighingMachine.java
+TYPE: class MetricWeighingMachine
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\adapter\WeighingMachineAdapter.java
+TYPE: interface WeighingMachineAdapter
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\adapter\WeightMachineAdapterImpl.java
+TYPE: class WeightMachineAdapterImpl
+FIELD: ImperialWeighingMachine imperialWeighingMachine;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\Dog.java
+TYPE: class Dog
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\Fish.java
+TYPE: class Fish
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\LivingThings.java
+TYPE: class LivingThings
+METHOD: abstract public void breathe();
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\Tree.java
+TYPE: class Tree
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\problem\Whale.java
+TYPE: class Whale
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\BreathingProcess.java
+TYPE: interface BreathingProcess
+METHOD: void breathe();
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\Dog.java
+TYPE: class Dog
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\Fish.java
+TYPE: class Fish
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\GillBreathing.java
+TYPE: class GillBreathing
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\LivingThings.java
+TYPE: class LivingThings
+FIELD: protected BreathingProcess breathingProcess;
+METHOD: abstract public void breathe();
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\LungBreathing.java
+TYPE: class LungBreathing
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\Photosynthesis.java
+TYPE: class Photosynthesis
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\bridge\solution\Tree.java
+TYPE: class Tree
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\filestructure\problem\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\filestructure\problem\Directory.java
+TYPE: class Directory
+FIELD: String directoryName;
+FIELD: List<Object> objectList;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\filestructure\problem\File.java
+TYPE: class File
+FIELD: String fileName;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\filestructure\solution\Directory.java
+TYPE: class Directory
+FIELD: String directoryName;
+FIELD: List<FileSystemComponent> children;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\filestructure\solution\File.java
+TYPE: class File
+FIELD: String fileName;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\filestructure\solution\FileSystemComponent.java
+TYPE: interface FileSystemComponent
+METHOD: void printContents();
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\filestructure\solution\FileSystemDemo.java
+TYPE: class FileSystemDemo
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\mathexpression\ArithmeticExpression.java
+TYPE: interface ArithmeticExpression
+METHOD: int evaluate();
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\mathexpression\Expression.java
+TYPE: class Expression
+FIELD: ArithmeticExpression leftExpression;
+FIELD: ArithmeticExpression rightExpression;
+FIELD: OperationType operation;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\mathexpression\MathExpressionEvaluator.java
+TYPE: class MathExpressionEvaluator
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\mathexpression\Number.java
+TYPE: class Number
+FIELD: int value;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\composite\mathexpression\OperationType.java
+TYPE: enum OperationType
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\BasePizza.java
+TYPE: interface BasePizza
+METHOD: String getDescription();
+METHOD: double getCost();
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\basepizzas\ChickenDominator.java
+TYPE: class ChickenDominator
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\basepizzas\Farmhouse.java
+TYPE: class Farmhouse
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\basepizzas\PlainPizza.java
+TYPE: class PlainPizza
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\basepizzas\TandooriPaneerDelight.java
+TYPE: class TandooriPaneerDelight
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\PizzaShop.java
+TYPE: class PizzaShop
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\ToppingDecorator.java
+TYPE: class ToppingDecorator
+FIELD: public BasePizza pizza;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\toppings\ExtraCheeseTopping.java
+TYPE: class ExtraCheeseTopping
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\toppings\MushroomTopping.java
+TYPE: class MushroomTopping
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\toppings\PepperoniTopping.java
+TYPE: class PepperoniTopping
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\decorator\toppings\VeggiesTopping.java
+TYPE: class VeggiesTopping
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\facade\ECommerceApp.java
+TYPE: class ECommerceApp
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\facade\InventoryService.java
+TYPE: class InventoryService
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\facade\NotificationService.java
+TYPE: class NotificationService
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\facade\OrderFacade.java
+TYPE: class OrderFacade
+FIELD: private final InventoryService inventory;
+FIELD: private final PaymentService payment;
+FIELD: private final ShippingService shipping;
+FIELD: private final NotificationService notification;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\facade\PaymentService.java
+TYPE: class PaymentService
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\facade\ShippingService.java
+TYPE: class ShippingService
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\roboticgame\issue\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\roboticgame\issue\Robot.java
+TYPE: class Robot
+FIELD: int coordinateX;
+FIELD: int coordinateY;
+FIELD: String type;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\roboticgame\issue\Sprites.java
+TYPE: class Sprites
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\roboticgame\solution\HumanoidRobot.java
+TYPE: class HumanoidRobot
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\roboticgame\solution\IRobot.java
+TYPE: interface IRobot
+METHOD: void display(int x, int y);
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\roboticgame\solution\RoboticDog.java
+TYPE: class RoboticDog
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\roboticgame\solution\RoboticFactory.java
+TYPE: class RoboticFactory
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\roboticgame\solution\RoboticGameSimulation.java
+TYPE: class RoboticGameSimulation
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\roboticgame\solution\Sprites.java
+TYPE: class Sprites
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\wordprocessor\issue\Character.java
+TYPE: class Character
+FIELD: char character;
+FIELD: String fontType;
+FIELD: int size;
+FIELD: int row;
+FIELD: int column;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\wordprocessor\issue\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\wordprocessor\solution\DocumentCharacter.java
+TYPE: class DocumentCharacter
+FIELD: private final char character;
+FIELD: private final String fontType;
+FIELD: private final int size;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\wordprocessor\solution\ILetter.java
+TYPE: interface ILetter
+METHOD: void display(int row, int column);
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\wordprocessor\solution\LetterFactory.java
+TYPE: class LetterFactory
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\flyweight\wordprocessor\solution\WordProcessorSimulation.java
+TYPE: class WordProcessorSimulation
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\proxy\EmployeeDao.java
+TYPE: interface EmployeeDao
+METHOD: void getEmployeeInfo(int empID);
+METHOD: void createEmployee(EmployeeDo obj);
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\proxy\EmployeeDaoImpl.java
+TYPE: class EmployeeDaoImpl
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\proxy\EmployeeDaoProxy.java
+TYPE: class EmployeeDaoProxy
+FIELD: private EmployeeDao empDaoObj;
+FIELD: private String clientRole;
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\proxy\EmployeeDo.java
+TYPE: class EmployeeDo
+
+FILE: src\main\java\com\conceptcoding\structuralpatterns\proxy\EmployeeManagement.java
+TYPE: class EmployeeManagement
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\solution\DemoSolution.java
+TYPE: class DemoSolution
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\solution\MacBook.java
+TYPE: class MacBook
+FIELD: private final Keyboard keyboard;
+FIELD: private final Mouse mouse;
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\utility\BluetoothKeyboard.java
+TYPE: class BluetoothKeyboard
+FIELD: private final String connectionType;
+FIELD: private final String company;
+FIELD: private final String modelVersion;
+FIELD: private final String color;
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\utility\BluetoothMouse.java
+TYPE: class BluetoothMouse
+FIELD: private final String connectionType;
+FIELD: private final String company;
+FIELD: private final String modelVersion;
+FIELD: private final String color;
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\utility\Keyboard.java
+TYPE: interface Keyboard
+METHOD: void getSpecifications();
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\utility\Mouse.java
+TYPE: interface Mouse
+METHOD: void getSpecifications();
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\utility\WiredKeyboard.java
+TYPE: class WiredKeyboard
+FIELD: private final String connectionType;
+FIELD: private final String company;
+FIELD: private final String modelVersion;
+FIELD: private final String color;
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\utility\WiredMouse.java
+TYPE: class WiredMouse
+FIELD: private final String connectionType;
+FIELD: private final String company;
+FIELD: private final String modelVersion;
+FIELD: private final String color;
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\violation\DemoViolation.java
+TYPE: class DemoViolation
+
+FILE: src\main\java\com\conceptcoding\video1solid\dependencyinversion\violation\MacBook.java
+TYPE: class MacBook
+FIELD: private final WiredKeyboard keyboard;
+FIELD: private final WiredMouse mouse;
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\Chef.java
+TYPE: class Chef
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\ChefTasks.java
+TYPE: interface ChefTasks
+METHOD: void prepareFood();
+METHOD: void decideMenu();
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\MaintenanceTasks.java
+TYPE: interface MaintenanceTasks
+METHOD: void cleanTheKitchen();
+METHOD: void reStockGroceries();
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\SolutionDemo.java
+TYPE: class SolutionDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\Waiter.java
+TYPE: class Waiter
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\solution\WaiterTasks.java
+TYPE: interface WaiterTasks
+METHOD: void serveFoodAndDrinks();
+METHOD: void takeOrder();
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\violation\RestaurantEmployee.java
+TYPE: interface RestaurantEmployee
+METHOD: void prepareFood();
+METHOD: void decideMenu();
+METHOD: void serveFoodAndDrinks();
+METHOD: void takeOrder();
+METHOD: void cleanTheKitchen();
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\violation\ViolationDemo.java
+TYPE: class ViolationDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\interfacesegregation\violation\Waiter.java
+TYPE: class Waiter
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\solution\Bicycle.java
+TYPE: class Bicycle
+FIELD: String brand;
+FIELD: Boolean hasGears;
+FIELD: int speed;
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\solution\Bike.java
+TYPE: class Bike
+METHOD: public abstract void accelerate();
+METHOD: public abstract void applyBrakes();
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\solution\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\solution\Engine.java
+TYPE: interface Engine
+METHOD: void turnOnEngine();
+METHOD: void turnOffEngine();
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\solution\MotorCycle.java
+TYPE: class MotorCycle
+FIELD: String company;
+FIELD: boolean isEngineOn;
+FIELD: int speed;
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\violation\Bicycle.java
+TYPE: class Bicycle
+FIELD: String brand;
+FIELD: Boolean hasGears;
+FIELD: int speed;
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\violation\Bike.java
+TYPE: interface Bike
+METHOD: void turnOnEngine();
+METHOD: void turnOffEngine();
+METHOD: void accelerate();
+METHOD: void applyBrakes();
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\violation\Demo.java
+TYPE: class Demo
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example1\violation\MotorCycle.java
+TYPE: class MotorCycle
+FIELD: String company;
+FIELD: boolean isEngineOn;
+FIELD: int speed;
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\Bicycle.java
+TYPE: class Bicycle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\Car.java
+TYPE: class Car
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\EngineVehicle.java
+TYPE: class EngineVehicle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\MotorCycle.java
+TYPE: class MotorCycle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\SolutionDemo.java
+TYPE: class SolutionDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\solution\Vehicle.java
+TYPE: class Vehicle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\violation\Bicycle.java
+TYPE: class Bicycle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\violation\Car.java
+TYPE: class Car
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\violation\MotorCycle.java
+TYPE: class MotorCycle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\violation\Vehicle.java
+TYPE: class Vehicle
+
+FILE: src\main\java\com\conceptcoding\video1solid\liskovsubstitution\example2\violation\ViolationDemo.java
+TYPE: class ViolationDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\solution\DatabaseInvoiceDao.java
+TYPE: class DatabaseInvoiceDao
+FIELD: Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\solution\FileInvoiceDao.java
+TYPE: class FileInvoiceDao
+FIELD: Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\solution\InvoiceDao.java
+TYPE: interface InvoiceDao
+METHOD: void save();
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\solution\SolutionDemo.java
+TYPE: class SolutionDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\violation\InvoiceDao.java
+TYPE: class InvoiceDao
+FIELD: Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\violation\InvoiceDaoOld.java
+TYPE: class InvoiceDaoOld
+FIELD: Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\openclosed\violation\ViolationDemo.java
+TYPE: class ViolationDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\solution\Invoice.java
+TYPE: class Invoice
+FIELD: private Marker marker;
+FIELD: private int quantity;
+FIELD: private int total;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\solution\InvoiceDao.java
+TYPE: class InvoiceDao
+FIELD: Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\solution\InvoicePrinter.java
+TYPE: class InvoicePrinter
+FIELD: private Invoice invoice;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\solution\Marker.java
+TYPE: class Marker
+FIELD: String name;
+FIELD: String color;
+FIELD: int price;
+FIELD: int year;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\solution\SolutionDemo.java
+TYPE: class SolutionDemo
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\violation\Invoice.java
+TYPE: class Invoice
+FIELD: private Marker marker;
+FIELD: private int quantity;
+FIELD: private int total;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\violation\Marker.java
+TYPE: class Marker
+FIELD: String name;
+FIELD: String color;
+FIELD: int price;
+FIELD: int year;
+
+FILE: src\main\java\com\conceptcoding\video1solid\singleresponsibility\violation\ViolationDemo.java
+TYPE: class ViolationDemo
+

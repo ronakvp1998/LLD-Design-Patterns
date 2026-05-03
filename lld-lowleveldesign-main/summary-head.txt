@@ -1,0 +1,200 @@
+FILE: src\main\java\com\conceptcoding\additionalpatterns\mvc\controller\BlogController.java
+TYPE: class BlogController
+FIELD: private final BlogView view;
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\mvc\model\Blog.java
+TYPE: class Blog
+FIELD: private String title;
+FIELD: private String content;
+FIELD: private String author;
+FIELD: private Date createdAt;
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\mvc\MVCPatternDemo.java
+TYPE: class MVCPatternDemo
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\mvc\view\BlogView.java
+TYPE: class BlogView
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\Bike.java
+TYPE: class Bike
+FIELD: private String model;
+FIELD: private String color;
+FIELD: private int seatingCapacity;
+FIELD: private int fuelTankCapacity;
+FIELD: private boolean isAvailableForTestDrive;
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\Car.java
+TYPE: class Car
+FIELD: private String model;
+FIELD: private String color;
+FIELD: private int seatingCapacity;
+FIELD: private int fuelTankCapacity;
+FIELD: private boolean isAvailableForTestDrive;
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\problem\ProblemDemo.java
+TYPE: class ProblemDemo
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\problem\VehicleFactory.java
+TYPE: class VehicleFactory
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\solution\NullVehicle.java
+TYPE: class NullVehicle
+FIELD: private final String model;
+FIELD: private final String color;
+FIELD: private final int seatingCapacity;
+FIELD: private final int fuelTankCapacity;
+FIELD: private final boolean isAvailableForTestDrive;
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\solution\SolutionDemo.java
+TYPE: class SolutionDemo
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\solution\VehicleFactory.java
+TYPE: class VehicleFactory
+
+FILE: src\main\java\com\conceptcoding\additionalpatterns\nullobject\Vehicle.java
+TYPE: class Vehicle
+METHOD: public abstract void start();
+METHOD: public abstract void stop();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\DebugLogProcessor.java
+TYPE: class DebugLogProcessor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\ErrorLogProcessor.java
+TYPE: class ErrorLogProcessor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\FatalLogProcessor.java
+TYPE: class FatalLogProcessor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\InfoLogProcessor.java
+TYPE: class InfoLogProcessor
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\LoggerDemo.java
+TYPE: class LoggerDemo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\chainofresponsibility\LogProcessor.java
+TYPE: class LogProcessor
+FIELD: int level;
+FIELD: LogProcessor nextLoggerProcessor;
+METHOD: abstract protected void write(String message);
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\problem\AirConditioner.java
+TYPE: class AirConditioner
+FIELD: boolean isOn;
+FIELD: int temperature;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\problem\Bulb.java
+TYPE: class Bulb
+FIELD: boolean isOn;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\problem\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\AirConditioner.java
+TYPE: class AirConditioner
+FIELD: boolean isOn;
+FIELD: int temperature;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\ICommand.java
+TYPE: interface ICommand
+METHOD: void execute();
+METHOD: void undo();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\RemoteController.java
+TYPE: class RemoteController
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\SetTemperatureCommand.java
+TYPE: class SetTemperatureCommand
+FIELD: private final AirConditioner ac;
+FIELD: private final int newTemperature;
+FIELD: private int previousTemperature;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\TurnOffCommand.java
+TYPE: class TurnOffCommand
+FIELD: private final AirConditioner ac;
+FIELD: private boolean previousState;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\command\solution\TurnOnCommand.java
+TYPE: class TurnOnCommand
+FIELD: private final AirConditioner ac;
+FIELD: private boolean previousState;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\AbstractExpression.java
+TYPE: interface AbstractExpression
+METHOD: int interpret(Context context);
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\AddNonTerminalExpression.java
+TYPE: class AddNonTerminalExpression
+FIELD: private final AbstractExpression rightExpression;
+FIELD: private final AbstractExpression leftExpression;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\BinaryNonTerminalExpression.java
+TYPE: class BinaryNonTerminalExpression
+FIELD: AbstractExpression leftExpression;
+FIELD: AbstractExpression rightExpression;
+FIELD: char operator;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\Context.java
+TYPE: class Context
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\MultiplyNonTerminalExpression.java
+TYPE: class MultiplyNonTerminalExpression
+FIELD: private final AbstractExpression leftExpression;
+FIELD: private final AbstractExpression rightExpression;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\interpreter\NumberTerminalExpression.java
+TYPE: class NumberTerminalExpression
+FIELD: String stringValue;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\collections\LinkedHashSetExample.java
+TYPE: class LinkedHashSetExample
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\Book.java
+TYPE: class Book
+FIELD: private final String title;
+FIELD: private final String author;
+FIELD: private final String isbn;
+FIELD: private int price;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\BookCollection.java
+TYPE: interface BookCollection
+METHOD: Iterator<Book> createIterator();
+METHOD: Iterator<Book> createReverseIterator();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\Iterator.java
+TYPE: interface Iterator
+METHOD: boolean hasNext();
+METHOD: T next();
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\Library.java
+TYPE: class Library
+FIELD: private final List<Book> books;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\LibraryIterator.java
+TYPE: class LibraryIterator
+FIELD: private final List<Book> books;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\LibraryIteratorDemo.java
+TYPE: class LibraryIteratorDemo
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\library\ReverseLibraryIterator.java
+TYPE: class ReverseLibraryIterator
+FIELD: private final List<Book> books;
+FIELD: private int position;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\problem\Book.java
+TYPE: class Book
+FIELD: private final String title;
+FIELD: private final String author;
+FIELD: private final String isbn;
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\iterator\problem\Client.java
+TYPE: class Client
+
+FILE: src\main\java\com\conceptcoding\behavioralpatterns\mediator\AuctionDemo.java
+TYPE: class AuctionDemo
