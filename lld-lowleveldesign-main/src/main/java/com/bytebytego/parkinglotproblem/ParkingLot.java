@@ -1,5 +1,11 @@
 package com.bytebytego.parkinglotproblem;
 
+import com.bytebytego.parkinglotproblem.fare.FareCalculator;
+import com.bytebytego.parkinglotproblem.fare.Ticket;
+import com.bytebytego.parkinglotproblem.spot.ParkingManager;
+import com.bytebytego.parkinglotproblem.spot.ParkingSpot;
+import com.bytebytego.parkinglotproblem.vehicle.Vehicle;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
