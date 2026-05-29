@@ -11,6 +11,7 @@ import java.util.Objects;
 public class Ticket {
     private final String ticketId;
     private final Vehicle vehicle;
+    
     private final ParkingSpot parkingSpot;
     private final LocalDateTime entryTime;
     private LocalDateTime exitTime;
@@ -24,7 +25,9 @@ public class Ticket {
     }
 
     public BigDecimal calculateParkingDuration(){
-        return new BigDecimal(Duration.between(entryTime, Objects.requireNonNullElseGet(exitTime,LocalDateTime::now)).toMinutes());
+        Duration duration = Duration.between(entryTime, Objects.requireNonNullElseGet(exitTime, LocalDateTime::now));
+        long hours = (long) Math.ceil(duration.toMillis() / 3600000.0);
+        return new BigDecimal(Math.max(1, hours));
     }
 
     public String getTicketId() {

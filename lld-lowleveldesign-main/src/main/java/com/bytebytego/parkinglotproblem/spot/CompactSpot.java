@@ -5,9 +5,11 @@ import com.bytebytego.parkinglotproblem.vehicle.VehicleSize;
 
 public class CompactSpot implements ParkingSpot{
     private int spotNumber;
+    private int floor;
     private Vehicle vehicle;
 
-    public CompactSpot(int spotNumber) {
+    public CompactSpot(int floor, int spotNumber) {
+        this.floor = floor;
         this.spotNumber = spotNumber;
         this.vehicle = null;
     }
@@ -22,7 +24,7 @@ public class CompactSpot implements ParkingSpot{
         if(isAvailable()){
             this.vehicle = vehicle;
         }else{
-            System.out.println("Spot is already occupied");
+            throw new IllegalStateException("Spot is already occupied");
         }
     }
 
@@ -34,6 +36,11 @@ public class CompactSpot implements ParkingSpot{
     @Override
     public int getSpotNumber() {
         return this.spotNumber;
+    }
+
+    @Override
+    public int getFloor() {
+        return this.floor;
     }
 
     @Override

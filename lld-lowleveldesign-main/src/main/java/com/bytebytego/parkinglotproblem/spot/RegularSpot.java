@@ -6,9 +6,11 @@ import com.bytebytego.parkinglotproblem.vehicle.VehicleSize;
 
 public class RegularSpot implements ParkingSpot {
     private int spotNumber;
+    private int floor;
     private Vehicle vehicle;  // The vehicle currently occupying this spot
 
-    public RegularSpot(int spotNumber) {
+    public RegularSpot(int floor, int spotNumber) {
+        this.floor = floor;
         this.spotNumber = spotNumber;
         this.vehicle = null;  // No vehicle occupying initially
     }
@@ -16,6 +18,11 @@ public class RegularSpot implements ParkingSpot {
     @Override
     public int getSpotNumber() {
         return spotNumber;
+    }
+
+    @Override
+    public int getFloor() {
+        return floor;
     }
 
     @Override
@@ -28,7 +35,7 @@ public class RegularSpot implements ParkingSpot {
         if (isAvailable()) {
             this.vehicle = vehicle;
         } else {
-            // Spot is already occupied
+            throw new IllegalStateException("Spot is already occupied");
         }
     }
 

@@ -8,5 +8,6 @@ public interface ParkingSpot {
     void occupy(Vehicle vehicle) ;
     void vacate();
     int getSpotNumber();
+    int getFloor();
     VehicleSize getSize();
 }
