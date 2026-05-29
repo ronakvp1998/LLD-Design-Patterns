@@ -10,6 +10,10 @@ public class FareCalculator {
         this.fareStrategies = fareStrategies;
     }
 
+    // this implementation uses a list of strategies to build up the fare step-by-step. 
+    // Each strategy takes the current fare calculated so far, 
+    // modifies it based on its own rules, 
+    // and passes the updated value to the next strategy in the list.
     public BigDecimal calculateFare(Ticket ticket){
         BigDecimal fare = BigDecimal.ZERO;
         for(FareStrategy strategy : fareStrategies){

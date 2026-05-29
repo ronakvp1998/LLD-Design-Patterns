@@ -28,8 +28,15 @@ public class ParkingLot {
 
     // Method to handle vehicle entry into the parking lot
     public Ticket enterVehicle(Vehicle vehicle){
-        // Delegate parking logic to ParkingManager
-        ParkingSpot spot = parkingManager.parkVehicle(vehicle);
+        ParkingSpot spot;
+        try {
+            // Delegate parking logic to ParkingManager
+            spot = parkingManager.parkVehicle(vehicle);
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage() + ": " + vehicle.getLicensePlate());
+            return null;
+        }
+        
         if(spot != null){
             // create ticket with entry time
             Ticket ticket = new Ticket(generateTicketId(),vehicle,spot, LocalDateTime.now());
@@ -41,17 +48,26 @@ public class ParkingLot {
     }
 
     // Method to handle vehicle exit from the parking lot
-    public void leaveVehicle(Ticket ticket){
+    public void leaveVehicle(Ticket ticket, com.bytebytego.parkinglotproblem.payment.PaymentMethod paymentMethod){
         // Ensue the ticket is valid and the vehicle hasn't already left
         if(ticket != null && ticket.getExitTime() == null){
             // set exit time
             ticket.setExitTime(LocalDateTime.now());
-            // Delegate unparking logic to ParkingManager
-            parkingManager.unparkVehicle(ticket.getVehicle());
             // calculate the fare
             BigDecimal fare = fareCalculator.calculateFare(ticket);
-            System.out.println("Vehicle " + ticket.getVehicle().getLicensePlate() +
-                    " has left. total fare: $ " + fare);
+            
+            // process payment
+            boolean isPaid = paymentMethod.processPayment(fare);
+            
+            if (isPaid) {
+                // Delegate unparking logic to ParkingManager
+                parkingManager.unparkVehicle(ticket.getVehicle());
+                System.out.println("Vehicle " + ticket.getVehicle().getLicensePlate() +
+                        " has left. total fare: $ " + fare);
+            } else {
+                System.out.println("Payment failed. Vehicle cannot exit.");
+                ticket.setExitTime(null); // Revert exit time
+            }
         }else{
             System.out.println("Invalid ticket or vehicle already exited");
         }

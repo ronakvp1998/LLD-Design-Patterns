@@ -1,0 +1,4 @@
+enter plate1
+status
+leave dummy-ticket
+quit
