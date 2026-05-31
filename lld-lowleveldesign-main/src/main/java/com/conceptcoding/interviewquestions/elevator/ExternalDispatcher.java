@@ -2,8 +2,6 @@ package com.conceptcoding.interviewquestions.elevator;
 
 import com.conceptcoding.interviewquestions.elevator.enums.ElevatorDirection;
 
-import java.util.List;
-
 public class ExternalDispatcher {
 
     ElevatorScheduler scheduler;
