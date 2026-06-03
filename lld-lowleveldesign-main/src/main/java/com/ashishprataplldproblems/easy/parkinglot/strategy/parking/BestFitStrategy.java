@@ -1,0 +1,32 @@
+package com.ashishprataplldproblems.easy.parkinglot.strategy.parking;
+
+import com.ashishprataplldproblems.easy.parkinglot.entities.ParkingFloor;
+import com.ashishprataplldproblems.easy.parkinglot.entities.ParkingSpot;
+import com.ashishprataplldproblems.easy.parkinglot.vehicle.Vehicle;
+
+import java.util.List;
+import java.util.Optional;
+
+public class BestFitStrategy implements ParkingStrategy {
+    @Override
+    public Optional<ParkingSpot> findSpot(List<ParkingFloor> floors, Vehicle vehicle) {
+        Optional<ParkingSpot> bestSpot = Optional.empty();
+
+        for (ParkingFloor floor : floors) {
+            Optional<ParkingSpot> spotOnThisFloor = floor.findAvailableSpot(vehicle);
+
+            if (spotOnThisFloor.isPresent()) {
+                if (bestSpot.isEmpty()) {
+                    // If this is the first spot we've found, it's the best one so far.
+                    bestSpot = spotOnThisFloor;
+                } else {
+                    // A smaller spot size enum ordinal means a tighter fit.
+                    if (spotOnThisFloor.get().getSpotSize().ordinal() < bestSpot.get().getSpotSize().ordinal()) {
+                        bestSpot = spotOnThisFloor;
+                    }
+                }
+            }
+        }
+        return bestSpot;
+    }
+}
