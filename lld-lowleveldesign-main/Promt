@@ -1,0 +1,44 @@
+Act as a Senior Software Engineer and Expert Technical Writer. I am going to provide you with the implementation details and code for a Low-Level Design (LLD) problem.
+
+Your task is to generate a comprehensive, highly detailed `README.md` file based on my implementation. My primary goal for this document is **revision**. I need to be able to read this `README.md` months from now and instantly understand the problem, the architectural decisions, and the code logic so well that I could re-implement it from scratch without looking at the original code.
+
+Here is the implementation data:
+[INSERT YOUR PROBLEM NAME, DESCRIPTION, AND CODE HERE]
+
+Please structure the `README.md` using the following exact sections:
+
+## 1. Problem Statement
+Provide a clear, concise summary of the system we are designing. What is the core problem being solved?
+
+## 2. Requirements and Scope
+Break this down into:
+* **Functional Requirements:** What should the system do?
+* **Non-Functional Requirements:** (e.g., extensibility, thread safety, performance expectations).
+* **Scope/Out of Scope:** What are we intentionally ignoring to keep the problem bounded?
+
+## 3. Design and System Flow
+Explain the overarching logic and workflow.
+* Step-by-step execution flow from the client's perspective to the system's backend.
+* How do the core components interact with each other?
+* (Optional) Provide a text-based workflow diagram or Mermaid.js chart if it helps visualize the flow.
+
+## 4. Class-Level Explanation
+Provide a deep dive into the blueprint of the system. For every major class/interface/enum:
+* **Name & Responsibility:** What is its single responsibility?
+* **Key Attributes:** What state does it hold?
+* **Key Methods:** What behaviors does it expose, and what is the core logic inside them?
+* **Relationships:** How does it relate to other classes (Composition, Aggregation, Inheritance)?
+
+## 5. Design Patterns Implemented
+For every design pattern used in the implementation:
+* **Pattern Name:** (e.g., Strategy, Factory, Observer, Singleton).
+* **Why it was used:** What specific design problem did it solve in *this* exact context?
+* **How it was implemented:** Map the pattern to the specific classes and interfaces in the provided code.
+
+## 6. Assumptions & Trade-offs (Crucial for Interviews)
+List any assumptions made during the design (e.g., "Assuming all operations happen in a single thread" or "Assuming in-memory storage is sufficient"). Highlight trade-offs (e.g., "Chose list over a map, sacrificing lookup time for ordered iteration").
+
+## 7. Step-by-Step Implementation Guide (Revision Strategy)
+Provide a mental model or a 5-step roadmap on how to build this system from scratch. (e.g., "Step 1: Define the core models. Step 2: Build the Strategy interfaces...", etc.). This is specifically to help me practice writing the code blindly.
+
+Make the tone professional, highly structured, and educational. Use bolding, bullet points, and markdown tables where appropriate to make it highly scannable.
