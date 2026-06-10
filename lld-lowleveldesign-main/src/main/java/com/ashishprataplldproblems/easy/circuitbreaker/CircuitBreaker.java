@@ -1,9 +1,10 @@
 package com.ashishprataplldproblems.easy.circuitbreaker;
 
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.Supplier;
 
 /**
- * Low-Level Design of a Circuit Breaker.
+ * Low-Level Design of a Circuit Breaker using Locks.
  */
 public class CircuitBreaker {
 
@@ -16,9 +17,13 @@ public class CircuitBreaker {
     private final int failureThreshold;
     private final long resetTimeoutInMillis;
 
-    private int failureCount;
-    private long lastFailureTime;
-    private State state;
+    // Volatile for read-visibility across threads without locking
+    private volatile int failureCount;
+    private volatile long lastFailureTime;
+    private volatile State state;
+    
+    // Lock to protect state mutations
+    private final ReentrantLock lock = new ReentrantLock();
 
     public CircuitBreaker(int failureThreshold, long resetTimeoutInMillis) {
         this.failureThreshold = failureThreshold;
@@ -29,8 +34,9 @@ public class CircuitBreaker {
 
     /**
      * Executes the given action wrapped in the circuit breaker logic.
+     * The remote call (action.get()) is executed outside the lock to prevent thread bottlenecking.
      */
-    public synchronized <T> T execute(Supplier<T> action) {
+    public <T> T execute(Supplier<T> action) {
         evaluateState();
 
         if (state == State.OPEN) {
@@ -38,6 +44,8 @@ public class CircuitBreaker {
         }
 
         try {
+            // Execute the action without holding the lock! 
+            // This allows concurrent executions when CLOSED.
             T result = action.get();
             recordSuccess();
             return result;
@@ -52,33 +60,51 @@ public class CircuitBreaker {
      */
     private void evaluateState() {
         if (state == State.OPEN) {
-            long currentTime = System.currentTimeMillis();
-            if (currentTime - lastFailureTime >= resetTimeoutInMillis) {
-                state = State.HALF_OPEN;
-                System.out.println("[State Change] OPEN -> HALF_OPEN. Ready to test the circuit.");
+            lock.lock();
+            try {
+                // Double-checked locking to ensure only one thread promotes to HALF_OPEN
+                if (state == State.OPEN) {
+                    long currentTime = System.currentTimeMillis();
+                    if (currentTime - lastFailureTime >= resetTimeoutInMillis) {
+                        state = State.HALF_OPEN;
+                        System.out.println("[State Change] OPEN -> HALF_OPEN. Ready to test the circuit.");
+                    }
+                }
+            } finally {
+                lock.unlock();
             }
         }
     }
 
     private void recordSuccess() {
-        if (state == State.HALF_OPEN) {
-            System.out.println("[State Change] HALF_OPEN -> CLOSED. Service recovered.");
+        lock.lock();
+        try {
+            if (state == State.HALF_OPEN) {
+                System.out.println("[State Change] HALF_OPEN -> CLOSED. Service recovered.");
+            }
+            // Reset counters and restore health
+            failureCount = 0;
+            state = State.CLOSED;
+        } finally {
+            lock.unlock();
         }
-
-        failureCount = 0;
-        state = State.CLOSED;
     }
 
     private void recordFailure() {
-        failureCount++;
-        lastFailureTime = System.currentTimeMillis();
+        lock.lock();
+        try {
+            failureCount++;
+            lastFailureTime = System.currentTimeMillis();
 
-        if (state == State.HALF_OPEN) {
-            state = State.OPEN;
-            System.out.println("[State Change] HALF_OPEN -> OPEN. Service still failing.");
-        } else if (state == State.CLOSED && failureCount >= failureThreshold) {
-            state = State.OPEN;
-            System.out.println("[State Change] CLOSED -> OPEN. Failure threshold reached.");
+            if (state == State.HALF_OPEN) {
+                state = State.OPEN;
+                System.out.println("[State Change] HALF_OPEN -> OPEN. Service still failing.");
+            } else if (state == State.CLOSED && failureCount >= failureThreshold) {
+                state = State.OPEN;
+                System.out.println("[State Change] CLOSED -> OPEN. Failure threshold reached.");
+            }
+        } finally {
+            lock.unlock();
         }
     }
 

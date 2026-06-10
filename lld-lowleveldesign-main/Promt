@@ -1,44 +1,44 @@
-Act as a Senior Software Engineer and Expert Technical Writer. I am going to provide you with the implementation details and code for a Low-Level Design (LLD) problem.
-
-Your task is to generate a comprehensive, highly detailed `README.md` file based on my implementation. My primary goal for this document is **revision**. I need to be able to read this `README.md` months from now and instantly understand the problem, the architectural decisions, and the code logic so well that I could re-implement it from scratch without looking at the original code.
-
-Here is the implementation data:
-[INSERT YOUR PROBLEM NAME, DESCRIPTION, AND CODE HERE]
-
-Please structure the `README.md` using the following exact sections:
+# Low-Level Design: Circuit Breaker Pattern
 
 ## 1. Problem Statement
-Provide a clear, concise summary of the system we are designing. What is the core problem being solved?
+In distributed systems, microservices frequently communicate with remote resources or other services over the network. When a remote service becomes unresponsive, slow, or starts failing, continuously retrying requests can consume critical system resources (threads, memory, network connections). This resource exhaustion can lead to **cascading failures** across the entire architecture.
+
+The **Circuit Breaker pattern** solves this by acting as a stateful proxy. It monitors the failure rates of remote calls and, upon reaching a configured threshold, temporarily blocks subsequent calls (opening the circuit). This "fast failure" prevents the calling service from wasting resources on doomed requests and gives the failing downstream service time to recover.
 
 ## 2. Requirements and Scope
-Break this down into:
-* **Functional Requirements:** What should the system do?
-* **Non-Functional Requirements:** (e.g., extensibility, thread safety, performance expectations).
-* **Scope/Out of Scope:** What are we intentionally ignoring to keep the problem bounded?
+
+### Functional Requirements
+* **State Management:** The circuit must transition between three core states: `CLOSED` (healthy), `OPEN` (failing), and `HALF_OPEN` (testing recovery).
+* **Failure Tracking:** The system must count consecutive failures of a wrapped operation.
+* **Fast Failure:** When the circuit is `OPEN`, incoming requests must be immediately rejected with a custom exception, without attempting the remote call.
+* **Self-Healing (Cooldown):** After a configurable timeout, the system must allow a test request (`HALF_OPEN`) to check if the remote service has recovered.
+
+### Non-Functional Requirements
+* **Thread Safety (Concurrency):** The circuit breaker must safely handle concurrent requests from multiple threads without race conditions.
+* **High Performance (No Bottlenecks):** The actual remote call must not be blocked by synchronization unless absolutely necessary.
+* **Extensibility:** The component should be generic enough to wrap any arbitrary method or remote call.
+
+### Scope / Out of Scope
+* **In Scope:** Single-node, in-memory state tracking. Standard exception-based failure detection. Concurrency control using explicit locks.
+* **Out of Scope:** Distributed state management (e.g., sharing states across multiple nodes via Redis). Advanced failure filtering (e.g., ignoring `400 Bad Request` but tripping on `500 Internal Server Error`). Dynamic thresholds based on load.
 
 ## 3. Design and System Flow
-Explain the overarching logic and workflow.
-* Step-by-step execution flow from the client's perspective to the system's backend.
-* How do the core components interact with each other?
-* (Optional) Provide a text-based workflow diagram or Mermaid.js chart if it helps visualize the flow.
+The system operates as a lightweight State Machine wrapped around a proxy execution method.
 
-## 4. Class-Level Explanation
-Provide a deep dive into the blueprint of the system. For every major class/interface/enum:
-* **Name & Responsibility:** What is its single responsibility?
-* **Key Attributes:** What state does it hold?
-* **Key Methods:** What behaviors does it expose, and what is the core logic inside them?
-* **Relationships:** How does it relate to other classes (Composition, Aggregation, Inheritance)?
+**Execution Flow:**
+1. A client submits a network call or action (via `Supplier<T>`) to the `execute` method.
+2. The system checks the current state via `evaluateState()`:
+   * If `OPEN`: It checks if the `resetTimeoutInMillis` has elapsed since the last failure. If yes, it transitions to `HALF_OPEN`.
+3. If the state is (or remains) `OPEN`, it immediately throws a `CircuitBreakerOpenException`.
+4. If `CLOSED` or `HALF_OPEN`, the system attempts to execute the supplier action **outside of any locks**.
+   * **On Success:** `recordSuccess()` clears the `failureCount` and forces the state to `CLOSED` (healing the circuit).
+   * **On Exception:** `recordFailure()` increments the `failureCount`, updates `lastFailureTime`, and transitions to `OPEN` if the threshold is met or if the test request failed.
 
-## 5. Design Patterns Implemented
-For every design pattern used in the implementation:
-* **Pattern Name:** (e.g., Strategy, Factory, Observer, Singleton).
-* **Why it was used:** What specific design problem did it solve in *this* exact context?
-* **How it was implemented:** Map the pattern to the specific classes and interfaces in the provided code.
-
-## 6. Assumptions & Trade-offs (Crucial for Interviews)
-List any assumptions made during the design (e.g., "Assuming all operations happen in a single thread" or "Assuming in-memory storage is sufficient"). Highlight trade-offs (e.g., "Chose list over a map, sacrificing lookup time for ordered iteration").
-
-## 7. Step-by-Step Implementation Guide (Revision Strategy)
-Provide a mental model or a 5-step roadmap on how to build this system from scratch. (e.g., "Step 1: Define the core models. Step 2: Build the Strategy interfaces...", etc.). This is specifically to help me practice writing the code blindly.
-
-Make the tone professional, highly structured, and educational. Use bolding, bullet points, and markdown tables where appropriate to make it highly scannable.
+### State Diagram
+```mermaid
+stateDiagram-v2
+    [*] --> CLOSED
+    CLOSED --> OPEN : Failures >= failureThreshold
+    OPEN --> HALF_OPEN : resetTimeoutInMillis elapsed
+    HALF_OPEN --> OPEN : Test request fails
+    HALF_OPEN --> CLOSED : Test request succeeds

@@ -2,6 +2,7 @@ package Lrucache;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class LRUCache<K,V> {
 
@@ -10,7 +11,7 @@ public class LRUCache<K,V> {
         V value;
         Node prev;
         Node next;
-        Node(K key,V value){
+        Node(K key,V value ){
             this.key = key;
             this.value = value;
         }
@@ -18,46 +19,57 @@ public class LRUCache<K,V> {
 
     private final int capacity;
     private final Map<K,Node> cache;
+    private final ReentrantLock lock;
 
     private final Node head;
     private final Node tail;
 
     public LRUCache(int capacity){
-        if(capacity <= 0){
-            throw new IllegalStateException("Capacity must be greater than 0");
+        if(capacity < 0){
+            throw new IllegalArgumentException("Capacity must be greater than 0");
         }
         this.capacity = capacity;
         this.cache = new HashMap<>();
+        this.lock = new ReentrantLock();
 
         this.head = new Node(null,null);
         this.tail = new Node(null,null);
-
         head.next = tail;
         tail.prev = head;
     }
 
     public V get(K key){
-        if(!cache.containsKey(key)){
-            return null;
+        lock.lock();
+        try {
+            if(!cache.containsKey(key)){
+                return null;
+            }
+            Node node = cache.get(key);
+            moveToHead(node);
+            return node.value;
+        }finally {
+            lock.unlock();
         }
-        Node node = cache.get(key);
-        moveToHead(node);
-        return node.value;
     }
 
-    public void put(K key,V value){
-        if(cache.containsKey(key)){
-            Node node = cache.get(key);
-            node.value = value;
-            moveToHead(node);
-        }else{
-            Node newNode = new Node(key,value);
-            cache.put(key,newNode);
-            addNode(newNode);
-            if(cache.size() > capacity){
-                Node tail = popTail();
-                cache.remove(tail.key);
+    public void put(K key, V value){
+        lock.lock();
+        try{
+            if(cache.containsKey(key)){
+                Node node = cache.get(key);
+                node.value = value;
+                moveToHead(node);
+            }else{
+                Node node = new Node(key,value);
+                cache.put(key,node);
+                addNode(node);
+                if(cache.size() > capacity){
+                    Node lruNode = popTail();
+                    cache.remove(lruNode.key);
+                }
             }
+        }finally {
+            lock.unlock();
         }
     }
 
@@ -65,15 +77,14 @@ public class LRUCache<K,V> {
         node.prev = head;
         node.next = head.next;
         head.next.prev = node;
-        head.next= node;
+        head.next = node;
     }
 
     private void removeNode(Node node){
-        Node preNode = node.prev;
+        Node prevNode = node.prev;
         Node nextNode = node.next;
-
-        preNode.next = nextNode;
-        nextNode.prev = preNode;
+        prevNode.next = nextNode;
+        nextNode.prev = prevNode;
     }
 
     private void moveToHead(Node node){
